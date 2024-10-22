@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --radius: 0.5rem}
+}
+@keyframes appear {
+  from{
+    opacity: 0;
+    scale: .5;
+  }
+  to{
+    opacity: 100%;
+    scale: 1;
+  }
+  
+}
+.animateonscroll {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
