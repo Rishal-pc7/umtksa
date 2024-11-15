@@ -201,7 +201,7 @@ function Home() {
           
         orientation="vertical"
     >
-        <CarouselContent className="mt-0 h-screen w-full basis-full relative">
+        vh<CarouselContent className="mt-0 h-[75vh] md:h-screen w-full basis-full relative">
             {hero.map((data,index)=>{
                 return(
 
