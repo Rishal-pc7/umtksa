@@ -70,7 +70,7 @@ function Header() {
     }
     <div className="logo h-auto w-full z-10 md:h-24 bg-transparent absolute top-0 left-0 flex justify-between">
     
-      <img className="h-16 my-2 md:h-28 md:m-10  inline " src={logo} alt=""/>
+      <img className="h-16 my-2 md:h-28 md:m-10 w-2/3 inline " src={logo} alt=""/>
       <div className="menus  md:hidden flex justify-end w-1/3">
             {menu ? <button className='outline-none p-4 ' onClick={()=>setMenu(!menu)}><X/></button>:<button className='outline-none p-4 ' onClick={()=>setMenu(!menu)}><MenuIcon/></button>}
         </div>     
