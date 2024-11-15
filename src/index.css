@@ -1,3 +1,4 @@
+@import '../src/fonts/style.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,15 +10,192 @@
   from{
     opacity: 0;
     scale: .5;
+    transform: translateY(90px);
   }
   to{
     opacity: 100%;
     scale: 1;
+    transform: translateY(0);
   }
   
 }
-.animateonscroll {
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+@keyframes marquee {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
+
+@keyframes animate{
+  0%{
+    transform: scale(0) translateX(0);
+    opacity: 1;
+  }
+  50%{
+    top: calc(100% - 50px);
+    transform: scale(.5) translateY(-150px) translateX(-90px);
+  }
+  100%{
+    transform: scale(1) translateX(90px) translateY(-75px) ;
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@keyframes animate-alternate{
+  0%{
+    transform: scale(0) translateX(0);
+    opacity: 1;
+  }
+  50%{
+    top: calc(100% - 50px);
+    transform: scale(.5) translateY(90px) translateX(-90px);
+  }
+  100%{
+    transform: scale(1) translateX(90px) translateY(75px) ;
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+
+@keyframes pulse-border{
+  0%{transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);opacity: 1;}
+  100%{transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);opacity: 0;}
+}
+.marquee{
+  animation: marquee 10s linear infinite;
+  overflow-x: hidden;
+}
+
+*{
+  scroll-behavior: smooth;
+}
+
+.load{
+  animation: appear .5s ;
+}
+
+.line {
+  width: 2px; /* Adjust width for thin lines */
+  background-color: #0097bc; /* Adjust color */
+  position: absolute;
+
+}
+
+.line-1 {
+  left: 4px;
+  height: 100%; /* Adjust height as needed */
+  
+}
+
+.line-2 {
+  left: 8px;
+  height: 100%;
+  
+}
+
+.line-3 {
+  left: 12px;
+  height: 100%;
+}
+
+.line-4 {
+  left: 16px;
+  height: 100%;
+}
+
+.line-5 {
+  left: 20px;
+  height: 100%;
+}
+
+.whatsapp .wtsp{
+  box-shadow: 0 0 20px rgba(0, 0, 0,0.15);
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  border-right: none;
+  border: 0;
+  transform: all .5s ease;
+  background: #25d366;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  position: fixed;
+  bottom:12px; 
+  right:16px;
+}
+.whatsapp .wtsp::before{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  animation: pulse-border 1500ms ease-out infinite;
+  -webkit-animations: pulse-border 1500ms ease-out infinite;
+  background-color: #25d366;
+  border-radius: 50%;
+  
+}
+.whatsapp .wtsp:hover:before{
+  width: 0;
+  height: 0;
+  animation: none;
+}
+.whatsapp .wtsp:focus{
+  animation: none;
+  -webkit-animation: none;
+  transform: none;
+  outline: none;
+  border: none;
+}
+.fade{
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+.show{
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+}
+.from-left{
+  --start-offset: -50%; /* Customize the starting position */
+  opacity: 0;
+  --delay:1s;
+}
+.from-right{
+  --start-offset: 50%; /* Customize the starting position */
+  opacity: 0;
+  --delay:1.5s;
+}
+@keyframes fadeInMove {
+  0% {
+    opacity: 0;
+    transform: translateX(var(--start-offset),0); /* Start with a slight offset */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* End at the original position */
+  }
+}
+@keyframes fadeOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.slider{
+  animation: fadeInMove 400ms ease-in var(--delay) forwards,fadeOpacity 200ms ease-in 2s;
+}
+

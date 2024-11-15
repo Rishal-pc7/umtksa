@@ -15,8 +15,13 @@ export default {
     		},
         fontFamily: {
           'rubik': ['Rubik', 'sans-serif'],
+          'cairo': ['Cairo', 'sans-serif'],
+          'agency':['Agency FB Bold', 'sans-serif']
         },
-    		colors: {}
+    		colors: {
+          'brand-cyan' :'#0097bc',
+          'brand-blue':'#12026e'
+        }
     	}
     },
     plugins: [require("tailwindcss-animate")],
