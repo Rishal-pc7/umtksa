@@ -30,11 +30,11 @@ function About() {
 
     </div>
         <hr className="w-full border-gray-300 my-4"/>
-              <div className="flex flex-col px-2 md:p-4 slider from-left">
+              <div className="flex flex-col px-1 md:p-4 slider from-left">
                  <div className="text-blue font-bold text-2xl text-brand-cyan">Our Mission </div>
                  <div className="text-blue font-normal text-lg text-justify mt-4 text-brand-blue">At UNITED MODE TRADING, our mission is to be your steadfast partner in the project material trading industry. We are dedicated to delivering reliable service and ensuring the timely provision of materials that cater to the diverse needs of our clients in the construction, events, and industrial sectors. Our commitment lies in fostering enduring relationships founded on integrity, transparency, and shared success.</div>
              </div>    
-              <div className="flex flex-col mt-5 px-2  md:p-4 slider from-left">
+              <div className="flex flex-col mt-5 px-1  md:p-4 slider from-left">
                  <div className="text-blue font-bold text-2xl text-brand-cyan">Our Vision</div>
                  <div className="text-blue font-normal text-lg text-justify text-brand-blue mt-4 text-br">Our vision is to set the benchmark as the premier provider in the project materials sector, celebrated for our vast selection and exemplary service. We constantly innovate and adapt to client needs, ensuring our solutions are not only relevant but industry-leading. Through a commitment to excellence and customer focus, we’re driven to support the success of every project we supply</div>
              </div>    
