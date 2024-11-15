@@ -2,12 +2,12 @@ import contactHero from '../../assets/contact-hero.jpg'
 import { z } from 'zod';
 import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
-import { Button } from '../ui/Button';
+import { Button } from '../ui/button';
 import { Label } from '../ui/label';
-import { Card, CardContent,CardFooter } from '../ui/card';
+import { Card, CardContent } from '../ui/card';
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { Check, CheckCircle, CircleX } from 'lucide-react';
+import {  CheckCircle, CircleX } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 const userSchema = z.object({
     fname: z.string().min(2, "First name must be at least 2 characters.",),
