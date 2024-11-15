@@ -8,7 +8,7 @@ function About() {
     <div className="flex justify-center text-white flex-col items-center h-full ">
 
         <p className="font-bold text-3xl md:text-5xl z-10">About Us</p>
-        <p className="font-medium   text-justify mt-5 text-lg md:text-xl z-10 md:w-1/2">With over 20 years of industry experience, UNITED MODE TRADING stands as a formidable leader in the construction and industrial sectors. Our deep-rooted expertise equips us to navigate the complexities and demands of these industries, ensuring that we deliver superior materials and unwavering support for every project.</p>
+        <p className="font-normal  px-4 md:px-0 text-justify mt-5 text-lg md:text-xl z-10 md:w-1/2">With over 20 years of industry experience, UNITED MODE TRADING stands as a formidable leader in the construction and industrial sectors. Our deep-rooted expertise equips us to navigate the complexities and demands of these industries, ensuring that we deliver superior materials and unwavering support for every project.</p>
         </div>
 
     </div>
@@ -40,12 +40,12 @@ function About() {
              </div>    
 
     </div>
-    <div className="w-full relative h-[50vh] md:h-[70vh] bg-cover bg-center md:bg-right mb-10 slider from-right"  style={{backgroundImage:`url('${cmMessage}')`}}>
+    <div className="w-full relative h-[70vh] md:h-[70vh] bg-cover bg-center md:bg-right mb-10 slider from-right"  style={{backgroundImage:`url('${cmMessage}')`}}>
     <div className='absolute bg-black inset-0 bg-opacity-50'></div>
     <div className="flex justify-center text-white flex-col items-center h-full ">
 
         <p className="font-bold text-3xl md:text-5xl z-10">Chairman’s Message</p>
-        <p className="font-normal w-[75%]  text-justify mt-5 text-lg md:text-xl z-10 ">As Chairman, it is my privilege to welcome all our valued clients and partners. With over 20 years of industry experience, I’ve seen our sector evolve and demands intensify. UNITED MODE TRADING remains steadfast in our commitment to excellence, upholding our core values of integrity, quality, and service to support your success. We take great pride in ensuring our clients receive precisely what they need, when they need it, bolstered by our dedicated team’s adherence to our core values of integrity and quality. I am confident that these values will guide us in fostering enduring partnerships and contributing to the success of your projects. We thank you for choosing us as your trusted material supplier</p>
+        <p className="font-normal px-4 md:px-0 md:w-[75%]  text-justify mt-5 text-lg md:text-xl z-10 ">As Chairman, it is my privilege to welcome all our valued clients and partners. With over 20 years of industry experience, I’ve seen our sector evolve and demands intensify. UNITED MODE TRADING remains steadfast in our commitment to excellence, upholding our core values of integrity, quality, and service to support your success. We take great pride in ensuring our clients receive precisely what they need, when they need it, bolstered by our dedicated team’s adherence to our core values of integrity and quality. I am confident that these values will guide us in fostering enduring partnerships and contributing to the success of your projects. We thank you for choosing us as your trusted material supplier</p>
         </div>
 
     </div>
