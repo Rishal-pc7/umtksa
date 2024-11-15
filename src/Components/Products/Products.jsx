@@ -249,11 +249,11 @@ used__modified_containers :[
             <p className="mt-2 md:mt-5 text-brand-blue text-xl text-justify leading-relaxed slider from-right font-semibold">{details[category.split('&').join('')][0].listHead }</p>
             {
                 details[category.split('&').join('')][0].list &&
-                <ul className="mt-4 text-brand-blue text-xl font-medium slider text-justify from-right">
+                <ul className="mt-4 text-brand-blue text-lg md:text-xl font-medium slider text-justify from-right">
                    {
                     details[category.split('&').join('')][0].list.map((item,index)=>{
                         return(
-                            <li key={index} className="list-disc ml-4 capitalize">{item.split('\\').map((content,key)=><span key={key} className={`${key === 1 ? 'font-normal': 'font-semibold'}`}>{content}</span>)}</li>
+                            <li key={index} className="list-disc ml-4 tracking-normal capitalize">{item.split('\\').map((content,key)=><span key={key} className={`${key === 1 ? 'font-normal': ''}`}>{content}</span>)}</li>
                         )
                     })
                    }
