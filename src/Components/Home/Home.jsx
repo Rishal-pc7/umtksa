@@ -194,7 +194,7 @@ function Home() {
     let navigate = useNavigate()
   return (
     <div className="">
-    <Carousel className='h-screen w-full' plugins={[
+    <Carousel className='h-[75vh] md:h-screen w-full' plugins={[
         Autoplay({
           delay: 4000,
           })]}
