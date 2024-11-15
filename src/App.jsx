@@ -1,4 +1,4 @@
-import { Routes,Route } from "react-router-dom"
+import { BrowserRouter as Router,Routes,Route } from "react-router-dom"
 import Header from "./Components/Header/Header"
 import Home from "./Components/Home/Home"
 import About from "./Components/About/About"
@@ -32,6 +32,8 @@ function App() {
   })
 }, []);
   return (
+    <Router>
+
     <div className="font-rubik relative">
          <Header/>
          <Widget/>
@@ -43,6 +45,7 @@ function App() {
          </Routes>
          <Footer/>
     </div>
+    </Router>
   )
 }
 

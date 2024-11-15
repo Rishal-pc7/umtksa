@@ -14,6 +14,10 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  server: {
+    // Ensure fallback is enabled if testing locally
+    historyApiFallback: true,
+  },
 
   
 })
