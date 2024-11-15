@@ -227,7 +227,7 @@ function Home() {
         <div className="line line-4"></div>
         <div className="line line-5"></div>
     </div>
-    <div className="p-6 md:p-36 justify-between flex flex-wrap bg-white h-screen gap-y-2 md:gap-x-4 overflow-hidden">
+    <div className="p-8 md:p-36 justify-between flex flex-wrap bg-white h-screen gap-y-2 md:gap-x-4 overflow-hidden">
 
         <div className={`content md:w-1/2 from-left slider`} > 
             <p className="text-lg font-medium  text-brand-blue">Learn More About Us</p>
