@@ -198,7 +198,7 @@ function Home() {
         <div className="flex justify-center absolute z-50  text-brand-blue flex-col items-start px-6 md:px-32 h-full ">
 
         {<p className={`font-semibold text-2xl md:text-5xl z-10`}   >Welcome to <span className="font-agency font-bold">UNITED MODE TRADING</span></p>}
-        <p className="font-medium mt-3 text-base md:text-xl z-10">Reliable Partner in Material Supply for Construction Events and Industrial sectors </p>
+        <p className="font-medium mt-3 text-base md:text-xl z-10">Reliable Partner in Material Supply for Construction,Events,Industrial and Production Sectors </p>
         </div>
     <Carousel className='' plugins={[
         Autoplay({

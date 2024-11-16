@@ -16,14 +16,14 @@ function Footer() {
           <h1 className="text-xl md:text-2xl font-bold md:basis-1/3">Contact</h1>
 
       </div>
-      <div className="flex flex-wrap gap-y-10 md:flex-nowrap z-50 justify-between mt-4 md:gap-x-10  px-2 md:px-10 text-white pb-10">
+      <div className="flex flex-wrap gap-y-10 md:flex-nowrap z-50  justify-between mt-4 md:gap-x-10  px-2 md:px-10 text-white pb-10">
 
       
       <div className="flex flex-col md:flex-row justify-center md:justify-start items-start basis-full md:basis-[73%] ">
          
          <h1 className="text-2xl md:text-2xl font-bold md:basis-1/3 block md:hidden text-white rounded-br border-b-4 pb-4 border-brand-cyan ">Our Products</h1>
          
-         <ul className="flex flex-col items-start w-full leading-relaxed text-justify mt-5 md:mt-0" style={{wordBreak:'break-word'}}>
+         <ul className="flex flex-col items-start w-full leading-relaxed text-justify mt-5 md:mt-0 text-base md:text-lg" style={{wordBreak:'break-word'}}>
         
          <li className='underline-offset-2 hover:underline focus:underline'><a href="/products/building_materials">Building Material</a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/construction_materials'> Construction Material</a></li>
@@ -35,7 +35,7 @@ function Footer() {
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/electrical_and_plumbing_materials'> Electrical and Plumbing Materials </a></li>
          
          </ul>
-         <ul className='flex flex-col items-start w-full leading-relaxed text-justify' style={{wordBreak:'break-word',whiteSpace:'nowrap'}}>
+         <ul className='flex flex-col items-start w-full leading-relaxed text-justify text-base md:text-lg' style={{wordBreak:'break-word',whiteSpace:'nowrap'}}>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href="/products/valves_&_pumps">Valves & Pumps</a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/finishing_materials'>Finishing Material</a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/air_conditioning_&_HVAC_equipments'> Air Conditioning & HVAC Equipments </a></li>
@@ -52,7 +52,7 @@ function Footer() {
          
          <h1 className="text-xl md:text-2xl font-bold md:basis-1/3 block md:hidden text-white rounded-br border-b-4 pb-4 border-brand-cyan">Quick Links</h1>
          
-         <ul className="flex flex-col justify-start items-start w-full leading-relaxed mt-5 md:mt-0">
+         <ul className="flex flex-col justify-start items-start w-full text-base md:text-lg leading-relaxed mt-5 md:mt-0">
          <li><a href="/" className="hover:text-blue-600 focus:text-blue-600">Home</a></li>
          <li><a href="/about" className="hover:text-blue-600 focus:text-blue-600">About</a></li>
          <li><a href="/contact" className="hover:text-blue-600 focus:text-blue-600">Contact</a></li>
@@ -65,11 +65,11 @@ function Footer() {
       <div className="flex flex-col justify-center md:justify-start items-start basis-full md:basis-1/3 ">
          <h1 className="text-xl md:text-2xl font-bold md:basis-1/3 block md:hidden text-white rounded-br border-b-4 pb-4 border-brand-cyan">Contact</h1>
 
-         <ul className="flex flex-col w-full items-start leading-relaxed mt-5 md:mt-0">
+         <ul className="flex flex-col w-full items-start leading-relaxed mt-5 md:mt-0 text-base md:text-lg">
          <li>Need Help?</li>
          <li>info@umtksa.com</li>
          <li>123 Hardware Lane, City</li>
-         <li className="flex justify-between mt-5 gap-x-4 absolute bottom-5 right-4 md:right-auto"><a><FacebookIcon/></a>  <a><InstagramIcon/></a> <a><LinkedinIcon/></a> <a><Twitter/></a> </li>
+         <li className="flex justify-between mt-5 gap-x-4 absolute bottom-5"><a><FacebookIcon/></a>  <a><InstagramIcon/></a> <a><LinkedinIcon/></a> <a><Twitter/></a> </li>
          
          </ul>
       </div>
