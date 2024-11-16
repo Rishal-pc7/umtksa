@@ -12,7 +12,7 @@ function Footer() {
       <div className="flex-col md:flex-row  md:gap-x-10 justify-between items-center px-10 hidden md:flex">
           
           <h1 className="text-xl md:text-2xl font-bold md:basis-[75%]">Our Products</h1>
-          <h1 className="text-xl md:text-2xl font-bold ml-64 md:basis-1/3">Quick Links</h1>
+          <h1 className="text-xl md:text-2xl font-bold ml-56 md:basis-1/3">Quick Links</h1>
           <h1 className="text-xl md:text-2xl font-bold md:basis-1/3">Contact</h1>
 
       </div>
