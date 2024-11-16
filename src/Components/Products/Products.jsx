@@ -171,9 +171,6 @@ function Products() {
     {src:`/waterproofing/1.jpg`},
     {src:`/waterproofing/2.jpg`},
     {src:`/waterproofing/3.jpg`},
-    {src:`/waterproofing/4.jpg`},
-    {src:`/waterproofing/5.jpg`},
-    {src:`/waterproofing/6.jpg`},
 ],
 general_hardware__tools:[
     {src:'/hardware-tools/hardware-hero.jpg',content:"We offer a comprehensive range of general hardware, tools, and accessories tailored to meet the diverse needs of the construction, industrial sector, and event management industries. Our product selection includes high-quality tools and materials designed to ensure efficiency, safety, and high performance for every type of project. Whether you're building structures, maintaining machinery, or organizing large-scale events, we provide reliable solutions sourced from trusted brands for durability and precision. We also offer a variety of event-specific accessories, such as temporary staging systems, lighting fixtures, and crowd control barriers. With timely delivery and competitive pricing, we are committed to providing the right solutions to help you complete your projects on time and to the highest standard.",listHead:'Our Products Include:',

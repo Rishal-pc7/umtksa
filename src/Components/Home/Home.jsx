@@ -15,7 +15,7 @@ import visionImg from '../../assets/vision2030.png'
 import buildingImg from '../../assets/building.jpg'
 import constructionImg from '../../assets/construction.jpeg'
 import steelImg from '../../assets/steel.jpeg'
-import scaffoldingImg from '../../assets/scaffolding.jpeg'
+import scaffoldingImg from '../../assets/scaffolding.jpg'
 import cablesImg from '../../assets/cables.jpeg'
 import timberImg from '../../assets/timber.jpg'
 import safetyImg from '../../assets/safety.jpg'
@@ -198,7 +198,7 @@ function Home() {
         <div className="flex justify-center absolute z-50  text-brand-blue flex-col items-start px-6 md:px-32 h-full ">
 
         {<p className={`font-semibold text-2xl md:text-5xl z-10`}   >Welcome to <span className="font-agency font-bold">UNITED MODE TRADING</span></p>}
-        <p className="font-medium mt-3 text-base md:text-xl z-10">Reliable Partner in Material Supply for Construction,Events,Industrial and Production Sectors </p>
+        <p className="font-medium mt-3 text-base md:text-xl z-10">Reliable Partner in Material Supply for Construction,Events,Industrial and Manufacturing Sectors </p>
         </div>
     <Carousel className='' plugins={[
         Autoplay({
@@ -231,7 +231,7 @@ function Home() {
         <div className="line line-4"></div>
         <div className="line line-5"></div>
     </div>
-    <div className="p-8 md:p-36 justify-between flex flex-wrap bg-white  gap-y-2 md:gap-x-4 overflow-hidden">
+    <div className="p-8 md:px-36 md:pt-20 justify-between flex flex-wrap bg-white  gap-y-2 md:gap-x-4 overflow-hidden">
 
         <div className={`content md:w-1/2 from-left slider`} > 
             <p className="text-lg font-medium  text-brand-blue">Learn More About Us</p>
@@ -243,9 +243,9 @@ function Home() {
         <img src={about} className={`w-full md:w-[40%] from-right slider bg-cover bg-center`}  alt="" />
     </div>
     
-    <div className="h-auto py-10 px-4 md:px-32 pb-4 md:pb-32 overflow-x-hidden">
+    <div className="h-auto py-10 px-4 md:px-32 pb-4 md:pb-5 overflow-x-hidden">
         <p className="text-center text-2xl py-14 md:text-3xl font-semibold tracking-widest uppercase text-[#0097bc]">Our Products</p>
-        <div className="flex  flex-wrap mt-10 gap-3">
+        <div className="flex  flex-wrap mt-5 gap-3">
             
              {
                 details.map((item,index)=>{
@@ -273,7 +273,7 @@ function Home() {
         </div>
         
     </div>
-    <div className="curved bg-gradient-to-b overflow-hidden  md:h-[60vh] flex justify-between md:p-36  p-4 py-20">
+    <div className="curved bg-gradient-to-b overflow-hidden  md:h-[40vh] flex justify-between md:p-20  p-4 ">
         <img src={expoImg} className="h-20 md:h-40 marquee" alt="" />
         <img src={visionImg} className="h-20 md:h-40 marquee" alt="" />
         <img src={wcImg} className="h-20 md:h-40 marquee" alt="" />
