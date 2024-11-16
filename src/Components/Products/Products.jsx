@@ -52,13 +52,13 @@ function Products() {
     ],
     scaffolding_and_accessories:[
             
-        {src:'/scaffolding/scaf-hero.jpg',content:"Our range of Scaffolding and Accessories includes durable solutions designed for safety, stability, and ease of use in construction and industrial projects. We offer a variety of scaffolding types, including Cuplock scaffolding, aluminum scaffolding, and Ring Lock systems, providing strong support for elevated work. In addition to the scaffolding frames, we supply all necessary accessories such as ladders, base plates, braces, adjustable jack, ring props, double coupler, and more, ensuring secure and efficient setup for any project. Whether you're working on a large construction site or a temporary event setup, our scaffolding systems are engineered to meet safety standards while offering flexibility and durability."},
-        {src:`/scaffolding/1.jpg`},
-        {src:`/scaffolding/2.jpg`},
-        {src:`/scaffolding/3.jpg`},
-        {src:`/scaffolding/4.jpg`},
-        {src:`/scaffolding/5.jpg`},
-        {src:`/scaffolding/6.jpg`},
+        {src:'/scaf-acc/scaf-hero.jpg',content:"Our range of Scaffolding and Accessories includes durable solutions designed for safety, stability, and ease of use in construction and industrial projects. We offer a variety of scaffolding types, including Cuplock scaffolding, aluminum scaffolding, and Ring Lock systems, providing strong support for elevated work. In addition to the scaffolding frames, we supply all necessary accessories such as ladders, base plates, braces, adjustable jack, ring props, double coupler, and more, ensuring secure and efficient setup for any project. Whether you're working on a large construction site or a temporary event setup, our scaffolding systems are engineered to meet safety standards while offering flexibility and durability."},
+        {src:`/scaf-acc/1.jpg`},
+        {src:`/scaf-acc/2.jpg`},
+        {src:`/scaf-acc/3.jpg`},
+        {src:`/scaf-acc/4.jpg`},
+        {src:`/scaf-acc/5.jpg`},
+        {src:`/scaf-acc/6.jpg`},
     ],
     fire_and_safety_supplies:[
             
@@ -212,7 +212,7 @@ events__exhibition_supplies:[
             {src:`/events/3.jpg`},
         ],
 used__modified_containers :[
-    {src:'/containers/containers-hero.jpg',content:"We specialize in providing used and modified containers in a variety of sizes, including 10ft, 20ft, and 40ft containers, both standard and high cube options, tailored to meet your specific needs.With sizes ranging from 10ft to 40ft, we deliver customized, durable container solutions that can be easily transported, set up, and adapted for any project or site.",listHead:'Our modified containers are ideal for a wide range of applications, including:',
+    {src:'/used-containers/containers-hero.jpg',content:"We specialize in providing used and modified containers in a variety of sizes, including 10ft, 20ft, and 40ft containers, both standard and high cube options, tailored to meet your specific needs.With sizes ranging from 10ft to 40ft, we deliver customized, durable container solutions that can be easily transported, set up, and adapted for any project or site.",listHead:'Our modified containers are ideal for a wide range of applications, including:',
         list:['Manager or Staff Offices:\\ Custom-built office spaces for operations, meetings, and administration.',
               'VIP and Standard Toilets:\\ Fully equipped restroom solutions for both standard and VIP needs.',
               'Differently-Abled Accessible Restrooms:\\ Designed to provide comfortable and compliant restroom facilities for people with disabilities.',
@@ -220,12 +220,12 @@ used__modified_containers :[
               'Guard Rooms:\\ Secure units for security personnel, providing a safe and functional workspace.',
               'Masjids:\\ Modified containers to create portable, functional spaces for prayer and religious activities.',
             ]},
-        {src:`/containers/1.jpg`},
-        {src:`/containers/2.jpg`},
-        {src:`/containers/3.jpg`},
-        {src:`/containers/4.jpg`},
-        {src:`/containers/5.jpg`},
-        {src:`/containers/6.jpg`},
+        {src:`/used-containers/1.jpg`},
+        {src:`/used-containers/2.jpg`},
+        {src:`/used-containers/3.jpg`},
+        {src:`/used-containers/4.jpg`},
+        {src:`/used-containers/5.jpg`},
+        {src:`/used-containers/6.jpg`},
     ],
     
 }

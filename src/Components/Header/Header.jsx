@@ -89,7 +89,7 @@ function Header() {
                 <li className="mx-4 relative " onMouseOver={()=>setDrop(true)} onMouseOut={()=>setDrop(false)}><span className={`${staticPath === '/products' && 'scale-150 font-medium' } hover:text-brand-cyan`}><a href="" className="duration-100 text-l	">Products</a>{drop ?<ChevronUp strokeWidth={0.75}  className='inline' onClick={()=>setDrop(!drop)}/>:<ChevronDown strokeWidth={0.75} className='inline' onClick={()=>setDrop(!drop)}/>}</span>
                 {
                   drop &&
-                  <div className={`md:absolute md:-left-[13rem] w-full md:w-[44rem] py-5 px-2 bg-white md:shadow text-black z-20 flex gap-x-3 flex-col md:flex-row`} >
+                  <div className={`md:absolute md:-left-[15rem] w-full md:w-[44rem] py-5 px-2 bg-white md:shadow text-black z-20 flex gap-x-3 flex-col md:flex-row`} >
                 
                 <ul className='leading-loose'>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href="/products/building_materials">Building Material</a></li>
