@@ -4,7 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
-         <div className="relative h-[125vh] md:h-[65vh]  text-white ">
+         <div className="relative h-[145vh] md:h-[65vh]  text-white ">
         <div className="w-full h-full absolute opacity-80" style={{backgroundImage:`url(${footerBg})`,backgroundPosition:'center',backgroundSize:'cover'}} >
 
         </div>
@@ -14,7 +14,7 @@ function Footer() {
       <div className="flex-col md:flex-row  justify-between relative items-center w-full px-10 hidden md:flex">
           
           <div className="text-xl md:text-2xl relative font-bold md:basis-[75%]"><h1 className="absolute left-[25%] -bottom-4"> Our Products</h1></div>
-          <div className="text-xl md:text-2xl font-bold md:basis-1/3">Quick Links</div>
+          <div className="text-xl md:text-2xl ml-20 font-bold md:basis-1/3">Quick Links</div>
           <div className="text-xl md:text-2xl font-bold pl-[23px] md:basis-1/3">Contact</div>
 
       </div>

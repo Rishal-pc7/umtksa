@@ -80,7 +80,7 @@ function Header() {
       
 
       
-      <div className={`${menu ? 'block' :'hidden'} md:block links mt-4 text-lg text-brand-blue md:mt-0 w-full pl-16 pb-4 `}>
+      <div className={`${menu ? 'block' :'hidden'} md:block links mt-4 text-lg text-brand-blue md:mt-0 w-full pl-12 pb-4 `}>
             <ul className="md:flex md:items-end  h-full leading-loose">
                 <li className='flex h-1/2 items-center mx-1'><hr className="w-2 border-brand-cyan border-2"/></li>
                 <li className="mx-4"><a href="/" className={`${location.pathname === '/' && 'scale-150 font-medium' }  duration-100 text-l hover:text-brand-cyan`}>Home</a></li>
@@ -119,7 +119,7 @@ function Header() {
                 
                 <li className="mx-4"><a href="/contact" className={`duration-100 text-l hover:text-brand-cyan`}>Contact Us</a></li>
                     <li className='flex h-1/2 items-center mx-1'><hr className="w-2 border-brand-cyan border-2"/></li>
-                <li className='ml-16 flex justify-between gap-x-5 h-2/3 items-center'><a><FacebookIcon/></a>  <a><InstagramIcon/></a> <a><LinkedinIcon/></a> <a><FaXTwitter/></a></li>    
+                <li className='ml-8 flex justify-between gap-x-4 h-2/3 items-center'><a><FacebookIcon/></a>  <a><InstagramIcon/></a> <a><LinkedinIcon/></a> <a><FaXTwitter/></a></li>    
             </ul>
         </div>
         
