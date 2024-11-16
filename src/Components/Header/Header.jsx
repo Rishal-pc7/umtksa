@@ -1,7 +1,7 @@
 import {ChevronDown, ChevronUp, MenuIcon,  X} from 'lucide-react'
 import { useState,useEffect } from 'react'
 import {useLocation } from 'react-router-dom'
-import logo from '../../assets/mainlogo.jpg'
+import logo from '../../assets/mainlogo.png'
 function Header() {
     const [drop,setDrop] = useState(false)
     const [menu,setMenu] = useState(false)
@@ -69,10 +69,8 @@ function Header() {
       </div>
     }
     <div className="logo h-auto w-full z-[75] md:h-24 bg-transparent absolute top-0 left-0 flex justify-between">
-    <div className="h-14 m-2 md:h-28 md:m-10 w-2/3">
 
-      <img className="" src={logo} alt=""/>
-    </div>
+      <img className="h-14 m-2 md:h-28 md:m-10 " src={logo} alt=""/>
       <div className="menus z-[75]  flex md:hidden justify-end w-[20%]">
             {menu ? <button className='outline-none p-4 bg-none ' onClick={()=>setMenu(!menu)}><X/></button>:<button className='outline-none p-4 bg-none' onClick={()=>setMenu(!menu)}><MenuIcon/></button>}
         </div>     
