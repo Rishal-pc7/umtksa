@@ -70,9 +70,9 @@ function Header() {
     }
     <div className="logo h-auto w-full z-10 md:h-24 bg-transparent absolute top-0 left-0 flex justify-between">
     
-      <img className="h-12 my-2 md:h-28 md:m-10 w-1/2 md:w-auto inline " src={logo} alt=""/>
+      <img className="h-12 my-2 md:h-28 md:m-10 w-auto md:inline " src={logo} alt=""/>
       <div className="menus  md:hidden flex justify-end w-1/3">
-            {menu ? <button className='outline-none p-4 ' onClick={()=>setMenu(!menu)}><X/></button>:<button className='outline-none p-4 ' onClick={()=>setMenu(!menu)}><MenuIcon/></button>}
+            {menu ? <button className='outline-none p-4 bg-none' onClick={()=>setMenu(!menu)}><X/></button>:<button className='outline-none p-4 bg-none' onClick={()=>setMenu(!menu)}><MenuIcon/></button>}
         </div>     
 
       <div className={`hidden relative md:flex md:h-20 md:w-1/2 md:rounded-bl-[80px] md:border-l-[20px] md:border-l-brand-cyan bg-white `}>
