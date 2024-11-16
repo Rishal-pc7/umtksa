@@ -1,7 +1,7 @@
 import {ChevronDown, ChevronUp, MenuIcon,  X} from 'lucide-react'
 import { useState,useEffect } from 'react'
 import {useLocation } from 'react-router-dom'
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/mainlogo.jpg'
 function Header() {
     const [drop,setDrop] = useState(false)
     const [menu,setMenu] = useState(false)
