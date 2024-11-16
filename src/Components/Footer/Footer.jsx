@@ -12,14 +12,14 @@ function Footer() {
       <div className="flex-col md:flex-row  md:gap-x-10 justify-between items-center px-10 hidden md:flex">
           
           <h1 className="text-xl md:text-2xl font-bold md:basis-[75%]">Our Products</h1>
-          <h1 className="text-xl md:text-2xl font-bold ml-10 md:basis-1/3">Quick Links</h1>
+          <h1 className="text-xl md:text-2xl font-bold ml-64 md:basis-1/3">Quick Links</h1>
           <h1 className="text-xl md:text-2xl font-bold md:basis-1/3">Contact</h1>
 
       </div>
       <div className="flex flex-wrap gap-y-10 md:flex-nowrap z-50  justify-between mt-4  md:gap-x-10 px-2 md:px-10 text-white pb-10">
 
       
-      <div className="flex flex-col md:flex-row justify-center md:justify-start items-start gap-x-10 basis-full md:basis-[75%] ">
+      <div className="flex flex-col md:flex-row justify-center text-lg md:justify-start items-start gap-x-10 basis-full md:basis-[75%] ">
          
          <h1 className="text-2xl md:text-2xl font-bold md:basis-1/3 block md:hidden text-white rounded-br border-b-4 pb-4 border-brand-cyan ">Our Products</h1>
          
