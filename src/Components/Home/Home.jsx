@@ -13,13 +13,14 @@ import expoImg from '../../assets/expo.png'
 import wcImg from '../../assets/saudiwc.png'
 import visionImg from '../../assets/vision2030.png'
 import buildingImg from '../../assets/building.jpg'
-import constructionImg from '../../assets/construction.jpeg'
+import constructionImg from '../../assets/construction.jpg'
 import steelImg from '../../assets/steel.jpeg'
 import scaffoldingImg from '../../assets/scaffolding.jpg'
-import cablesImg from '../../assets/cables.jpeg'
+import cablesImg from '../../assets/cables.jpg'
 import timberImg from '../../assets/timber.jpg'
 import safetyImg from '../../assets/safety.jpg'
-import elecImg from '../../assets/electricals.jpeg'
+import elecImg from '../../assets/electricals.jpg'
+import valvesImg from '../../assets/valves.jpg'
 import finishingImg from '../../assets/finishing.jpg'
 import hvacImg from '../../assets/hvac.jpg'
 import ITImg from '../../assets/it.jpg'
@@ -97,8 +98,8 @@ const details =[
     },
     {
         id:9,
-        imgurl:elecImg,
-        link:'/products/valves_&_pumps',
+        imgurl:valvesImg,
+        link:'/products/pumps_&_valves',
         class:'from-left',
         name:'Valves and Pumps ',
         description:'Our range of Pressure Valves and Pressure Pumps is designed to provide reliable control and system safety. '
@@ -134,7 +135,7 @@ const details =[
     {
         id:13,
         imgurl:waterpImg,
-        link:'/products/waterproofing_&_thermal_insulation_materials',
+        link:'/products/waterproofing_&_thermal_insulation',
         class:'from-right',
         name:'Waterproofing & Thermal Insulation Materials',
         description:'We specialize in providing high-quality waterproofing and thermal insulation materials.'
@@ -237,7 +238,7 @@ function Home() {
             <p className="text-lg font-medium  text-brand-blue">Learn More About Us</p>
             <h2 className="text-3xl font-semibold text-brand-cyan md:text-4xl mt-2">Why Choose Us?</h2>
             <p className="text-lg font-normal mt-10 text-justify text-brand-blue">At UNITED MODE TRADING, we pride ourselves on being your trusted partner in delivering a broad range of materials tailored to meet the diverse demands of construction projects, event setups, and industrial operations. Drawing on deep industry expertise, we are committed to supplying required materials that align precisely with your project requirements.</p>
-            <p className="text-lg text-justify font-normal mt-3 text-brand-blue">Our knowledgeable team ensures you receive the correct materials, supported by excellent service and prompt delivery. With a focus on building enduring partnerships, we are dedicated to delivering value, reliability, and consistency in every order.</p>
+            <p className="text-lg text-justify font-normal mt-3 text-brand-blue">Our knowledgeable team ensures you to receive the required materials, supported by excellent service and prompt delivery. With a focus on building enduring partnerships, we are dedicated to delivering value, reliability, and consistency in every order.</p>
         
         </div>
         <img src={about} className={`w-full md:w-[40%] from-right slider bg-cover bg-center`}  alt="" />
@@ -252,10 +253,10 @@ function Home() {
                     return(
 
                         <div key={index} className={`basis-full md:basis-[24%] relative h-[400px] rounded-xl bg-center bg-no-repeat ${item.class}  slider  `} style={{background:`url(${item.imgurl})`,backgroundRepeat:'no-repeat',backgroundSize:'cover',backgroundPosition:'center'}} onMouseOver={()=>setHover(item.id)} onFocus={()=>setHover(item.id)} onBlur={()=>setHover()} onMouseLeave={()=>setHover()}>
-                    <div className={`absolute inset-0 ${hover===item.id?"bg-gradient-to-b from-brand-blue to-brand-cyan opacity-50": "bg-brand-blue opacity-30"} flex items-center rounded-xl justify-center`}></div>
+                    <div className={`absolute inset-0 ${hover===item.id?"bg-gradient-to-b from-brand-blue to-brand-cyan opacity-40": "bg-brand-blue opacity-30"} flex items-center rounded-xl justify-center`}></div>
                     <div className="absolute bottom-3 h-2/3 px-5 w-full text-left z-50 flex flex-nowrap flex-col justify-end gap-y-4 items-end">
 
-                          <p className="text-white w-full font-medium  text-xl">{item.name}</p>
+                          <p className=" w-full font-medium  text-xl text-white">{item.name}</p>
                           {
                               hover === item.id &&
                               <p className="w-full text-white load">{item.description}</p>
@@ -273,7 +274,7 @@ function Home() {
         </div>
         
     </div>
-    <div className="curved bg-gradient-to-b overflow-hidden  md:h-[40vh] flex justify-between md:p-20  p-4 ">
+    <div className="curved bg-gradient-to-b overflow-hidden  md:h-[40vh] flex justify-between md:py-20 md:px-36  p-4 ">
         <img src={expoImg} className="h-20 md:h-40 marquee" alt="" />
         <img src={visionImg} className="h-20 md:h-40 marquee" alt="" />
         <img src={wcImg} className="h-20 md:h-40 marquee" alt="" />

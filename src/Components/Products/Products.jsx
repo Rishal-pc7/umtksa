@@ -89,7 +89,7 @@ function Products() {
         {src:`/electrical-plumbing/6.jpg`},
         
     ],
-    valves__pumps:[
+    pumps__valves:[
         
         {src:'/valves-pumps/valves-hero.jpg',content:"Our range of Pressure Valves is designed to provide reliable control and system safety. We offer a variety of pressure relief valves, pressure regulating valves, and check valves to ensure optimal pressure control in water, fluid, and air systems. These valves are built for durability and precision, making them ideal for residential, industrial, and construction applications where accurate pressure management is crucial.\nOur selection of Pressure Pumps, including positive displacement pumps and submersible pumps, are engineered to deliver consistent and efficient flow. These pumps are suitable for residential, industrial, and construction applications, providing reliable performance, energy efficiency, and durability in various water and fluid handling systems."},
         {src:`/valves-pumps/1.jpg`},
@@ -151,7 +151,7 @@ function Products() {
         {src:`/it/6.jpg`},
         
     ],
-    waterproofing__thermal_insulation_materials:[
+    waterproofing__thermal_insulation:[
         
     {src:'/waterproofing/waterproofing-hero.jpg',content:"We specialize in providing high-quality waterproofing and thermal insulation materials designed to meet the demanding needs of the construction and industrial sectors. Our product range includes advanced solutions for protecting structures from water ingress, moisture damage, and thermal fluctuations, ensuring long-lasting durability and energy efficiency. Whether you're working on commercial buildings, industrial facilities, infrastructure projects, construction projects, or repair works, we deliver all required materials to your project sites on time, ensuring smooth progress and timely completion. We partner with trusted manufacturers to deliver reliable, cost-effective solutions that meet industry standards and environmental regulations, helping you achieve high-performance results on every project.",listHead:'Our Products Include:',
         list:['Bituminous membrane waterproofing',
@@ -226,12 +226,158 @@ used__modified_containers :[
     ],
     
 }
+const brands = {
+    building_materials:[
+        {src:'/building-materials/b1.jpg'},
+        {src:'/building-materials/b2.jpg'},
+        {src:'/building-materials/b3.jpg'},
+        {src:'/building-materials/b4.jpg'},
+        {src:'/building-materials/b5.jpg'},
+        {src:'/building-materials/b6.jpg'},
+    ],
+    construction_materials:[
+        {src:'/construction-materials/b1.jpg'},
+        {src:'/construction-materials/b2.jpg'},
+        {src:'/construction-materials/b3.jpg'},
+        {src:'/construction-materials/b4.jpg'},
+        {src:'/construction-materials/b5.jpg'},
+        {src:'/construction-materials/b6.jpg'},
+        
+    ],
+    commercial_steel:[
+        {src:'/commercial-steel/b1.jpg'},
+        {src:'/commercial-steel/b2.jpg'},
+        {src:'/commercial-steel/b3.jpg'},
+        {src:'/commercial-steel/b4.jpg'},
+        {src:'/commercial-steel/b5.jpg'},
+        {src:'/commercial-steel/b6.jpg'},
+        
+    ],
+    timber_and_plywood:[
+        {src:'/timber-plywood/b1.jpg'},
+        {src:'/timber-plywood/b2.jpg'},
+        {src:'/timber-plywood/b3.jpg'},
+        {src:'/timber-plywood/b4.jpg'},
+        {src:'/timber-plywood/b5.jpg'},
+        {src:'/timber-plywood/b6.jpg'},
+        
+    ],
+    scaffolding_and_accessories:[
+        {src:'/scaff-acc/b1.jpg'},
+        {src:'/scaff-acc/b2.jpg'},
+        {src:'/scaff-acc/b3.jpg'},
+        {src:'/scaff-acc/b4.jpg'},
+        {src:'/scaff-acc/b5.jpg'},
+        {src:'/scaff-acc/b6.jpg'},
+        
+    ],
+    fire_and_safety_supplies:[
+        {src:'/fire-safety/b1.jpg'},
+        {src:'/fire-safety/b2.jpg'},
+        {src:'/fire-safety/b3.jpg'},
+        {src:'/fire-safety/b4.jpg'},
+        {src:'/fire-safety/b5.jpg'},
+        {src:'/fire-safety/b6.jpg'},
+        
+    ],
+    cables__wires:[
+        {src:'/cables-wires/b1.jpg'},
+        {src:'/cables-wires/b2.jpg'},
+        {src:'/cables-wires/b3.jpg'},
+        {src:'/cables-wires/b4.jpg'},
+        {src:'/cables-wires/b5.jpg'},
+        {src:'/cables-wires/b6.jpg'},
+        
+    ],
+    electrical_and_plumbing_materials:[
+        {src:'/electrical-plumbing/b1.jpg'},
+        {src:'/electrical-plumbing/b2.jpg'},
+        {src:'/electrical-plumbing/b3.jpg'},
+        {src:'/electrical-plumbing/b4.jpg'},
+        {src:'/electrical-plumbing/b5.jpg'},
+        {src:'/electrical-plumbing/b6.jpg'},
+        
+    ],
+    pumps__valves:[
+        {src:'/valves-pumps/b1.jpg'},
+        {src:'/valves-pumps/b2.jpg'},
+        {src:'/valves-pumps/b3.jpg'},
+        {src:'/valves-pumps/b4.jpg'},
+        {src:'/valves-pumps/b5.jpg'},
+        {src:'/valves-pumps/b6.jpg'},
+        
+    ],
+    finishing_materials:[
+        {src:'/finishing-materials/b1.jpg'},
+        {src:'/finishing-materials/b2.jpg'},
+        {src:'/finishing-materials/b3.jpg'},
+        {src:'/finishing-materials/b4.jpg'},
+        {src:'/finishing-materials/b5.jpg'},
+        {src:'/finishing-materials/b6.jpg'},
+        
+    ],
+    air_conditioning__HVAC_equipments:[
+        {src:'/ac-hvac/b1.jpg'},
+        {src:'/ac-hvac/b2.jpg'},
+        {src:'/ac-hvac/b3.jpg'},
+        {src:'/ac-hvac/b4.jpg'},
+        {src:'/ac-hvac/b5.jpg'},
+        {src:'/ac-hvac/b6.jpg'},
+        
+    ],
+    IT__networking_equipments:[
+        {src:'/it/b1.jpg'},
+        {src:'/it/b2.jpg'},
+        {src:'/it/b3.jpg'},
+        {src:'/it/b4.jpg'},
+        {src:'/it/b5.jpg'},
+        {src:'/it/b6.jpg'},
+        
+    ],
+    waterproofing__thermal_insulation:[
+        {src:'/waterproofing/b1.jpg'},
+        {src:'/waterproofing/b2.jpg'},
+        {src:'/waterproofing/b3.jpg'},
+        {src:'/waterproofing/b4.jpg'},
+        {src:'/waterproofing/b5.jpg'},
+        {src:'/waterproofing/b6.jpg'},
+        
+    ],
+    general_hardware__tools:[
+        {src:'/hardware-tools/b1.jpg'},
+        {src:'/hardware-tools/b2.jpg'},
+        {src:'/hardware-tools/b3.jpg'},
+        {src:'/hardware-tools/b4.jpg'},
+        {src:'/hardware-tools/b5.jpg'},
+        {src:'/hardware-tools/b6.jpg'},
+        
+    ],
+    events__exhibition_supplies:[
+        {src:'/events/b1.jpg'},
+        {src:'/events/b2.jpg'},
+        {src:'/events/b3.jpg'},
+        {src:'/events/b4.jpg'},
+        {src:'/events/b5.jpg'},
+        {src:'/events/b6.jpg'},
+        
+    ],
+    used__modified_containers :[
+        {src:'/used-containers/b1.jpg'},
+        {src:'/used-containers/b2.jpg'},
+        {src:'/used-containers/b3.jpg'},
+        {src:'/used-containers/b4.jpg'},
+        {src:'/used-containers/b5.jpg'},
+        {src:'/used-containers/b6.jpg'},
+        
+    ],
+
+}
     
     return (
         <>
          <div className="slider from-left h-[85vh] w-full relative" style={{background:`url(${details[category.split('&').join('')][0].src})`,backgroundPosition:'center',backgroundSize:'cover'}}>
-        <div className="absolute inset-0 bg-white bg-opacity-25"></div>
-
+    <div className='absolute bg-slate-500 inset-0 bg-opacity-30'></div>
+         
             
     </div>
                <h1 className="capitalize font-medium  mt-16 z-50 text-xl md:text-4xl text-center text-brand-cyan" >{category?.split('_').join(' ')}</h1>
@@ -294,21 +440,22 @@ used__modified_containers :[
         }
         </div>
     </div>
-        <Carousel className='w-full h-auto p-4 md:p-24 bg-slate-50' plugins={[
+        <Carousel className='w-full h-auto p-4 md:p-24 bg-white' plugins={[
             Autoplay({
                 delay: 2000,
             }),
         ]}>
-            <h1 className="text-2xl md:text-3xl font-bold text-center mb-16">Brands we deal With</h1>
+            <h1 className="text-2xl md:text-4xl text-brand-cyan font-bold text-center mb-16">Brands we deal With</h1>
         <CarouselContent className='flex justify-between w-full '>
-        <CarouselItem className="basis-1/2 md:basis-1/4"><img src={esab} alt="" /></CarouselItem>
-        <CarouselItem className="basis-1/2 md:basis-1/4"><img src={bosch} alt="" /></CarouselItem>
-        <CarouselItem className="basis-1/2 md:basis-1/4"><img src={knipex} alt="" /></CarouselItem>
-        <CarouselItem className="basis-1/2 md:basis-1/4"><img src={dewalt} alt="" /></CarouselItem>
-        <CarouselItem className="basis-1/2 md:basis-1/4"><img src={wacker} alt="" /></CarouselItem>
-        <CarouselItem className="basis-1/2 md:basis-1/4"><img src={wacker} alt="" /></CarouselItem>
-        <CarouselItem className="basis-1/2 md:basis-1/4"><img src={wacker} alt="" /></CarouselItem>
-        <CarouselItem className="basis-1/2 md:basis-1/4"><img src={wacker} alt="" /></CarouselItem>
+            {
+                brands[category.split('&').join('')].map((item,index)=>{
+                    return(
+
+                        <CarouselItem key={index} className="basis-1/2 md:basis-1/4"><img src={item.src} alt="" /></CarouselItem>
+                    )
+                })
+            }
+        
         </CarouselContent>
 
     </Carousel>

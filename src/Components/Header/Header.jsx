@@ -1,7 +1,8 @@
-import {ChevronDown, ChevronUp, MenuIcon,  X} from 'lucide-react'
+import {ChevronDown, ChevronUp, FacebookIcon, InstagramIcon, LinkedinIcon, MenuIcon,} from 'lucide-react'
 import { useState,useEffect } from 'react'
 import {useLocation } from 'react-router-dom'
 import logo from '../../assets/mainlogo.png'
+import { FaXTwitter } from "react-icons/fa6";
 function Header() {
     const [drop,setDrop] = useState(false)
     const [menu,setMenu] = useState(false)
@@ -39,8 +40,8 @@ function Header() {
                   <div className={`md:absolute md:-left-[11rem] w-full md:w-[38rem] py-5 px-1 md:px-2 bg-white md:shadow text-black z-20 flex gap-x-3 flex-col md:flex-row `} >
                 
                 <ul className='leading-loose'>
-                    <li className='underline-offset-2 hover:underline focus:underline'><a href="/products/building_materials">Building Material</a></li>
-                    <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/construction_materials'> Construction Material</a></li>
+                    <li className='underline-offset-2 hover:underline focus:underline'><a href="/products/building_materials">Building Materials</a></li>
+                    <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/construction_materials'> Construction Materials</a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/commercial_steel'> Commercial Steel</a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/timber_and_plywood'>Timber and Plywood</a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/scaffolding_and_accessories'>Scaffolding and Accessories</a></li>
@@ -49,11 +50,11 @@ function Header() {
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/electrical_and_plumbing_materials'> Electrical and Plumbing Materials </a></li>
                 </ul>
                 <ul className='leading-loose'>
-                    <li className='underline-offset-2 hover:underline focus:underline'><a href="/products/valves_&_pumps">Valves & Pumps</a></li>
-                    <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/finishing_materials'>Finishing Material</a></li>
+                    <li className='underline-offset-2 hover:underline focus:underline'><a href="/products/pumps_&_valves">Pumps & Valves</a></li>
+                    <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/finishing_materials'>Finishing Materials</a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/air_conditioning_&_HVAC_equipments'> Air Conditioning & HVAC Equipments </a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/IT_&_networking_equipments'>IT and Networking Equipments</a></li>
-                    <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/waterproofing_&_thermal_insulation_materials'>Waterproofing & Thermal Insulation Materials</a></li>
+                    <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/waterproofing_&_thermal_insulation'>Waterproofing & Thermal Insulation</a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/general_hardware_&_tools'>General Hardware and Tools </a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/events_&_exhibition_supplies'>Events and Exhibition Supplies</a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/used_&_modified_containers'> Used & Modified Containers </a></li>
@@ -79,7 +80,7 @@ function Header() {
       
 
       
-      <div className={`${menu ? 'block' :'hidden'} md:block links mt-4 text-base md:mt-0 w-full pl-16 pb-4 `}>
+      <div className={`${menu ? 'block' :'hidden'} md:block links mt-4 text-lg text-brand-blue md:mt-0 w-full pl-16 pb-4 `}>
             <ul className="md:flex md:items-end  h-full leading-loose">
                 <li className='flex h-1/2 items-center mx-1'><hr className="w-2 border-brand-cyan border-2"/></li>
                 <li className="mx-4"><a href="/" className={`${location.pathname === '/' && 'scale-150 font-medium' }  duration-100 text-l hover:text-brand-cyan`}>Home</a></li>
@@ -92,8 +93,8 @@ function Header() {
                   <div className={`md:absolute md:-left-[11rem] w-full md:w-[38rem] py-5 px-2 bg-white md:shadow text-black z-20 flex gap-x-3 flex-col md:flex-row`} >
                 
                 <ul className='leading-loose'>
-                    <li className='underline-offset-2 hover:underline focus:underline'><a href="/products/building_materials">Building Material</a></li>
-                    <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/construction_materials'> Construction Material</a></li>
+                    <li className='underline-offset-2 hover:underline focus:underline'><a href="/products/building_materials">Building Materials</a></li>
+                    <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/construction_materials'> Construction Materials</a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/commercial_steel'> Commercial Steel</a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/timber_and_plywood'>Timber and Plywood</a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/scaffolding_and_accessories'>Scaffolding and Accessories</a></li>
@@ -102,11 +103,11 @@ function Header() {
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/electrical_and_plumbing_materials'> Electrical and Plumbing Materials </a></li>
                 </ul>
                 <ul className='leading-loose'>
-                    <li className='underline-offset-2 hover:underline focus:underline'><a href="/products/valves_&_pumps">Valves & Pumps</a></li>
-                    <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/finishing_materials'>Finishing Material</a></li>
+                    <li className='underline-offset-2 hover:underline focus:underline'><a href="/products/pumps_&_valves">Pumps & Valves</a></li>
+                    <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/finishing_materials'>Finishing Materials</a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/air_conditioning_&_HVAC_equipments'> Air Conditioning & HVAC Equipments </a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/IT_&_networking_equipments'>IT and Networking Equipments</a></li>
-                    <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/waterproofing_&_thermal_insulation_materials'>Waterproofing & Thermal Insulation Materials</a></li>
+                    <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/waterproofing_&_thermal_insulation'>Waterproofing & Thermal Insulation</a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/general_hardware_&_tools'>General Hardware and Tools </a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/events_&_exhibition_supplies'>Events and Exhibition Supplies</a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/used_&_modified_containers'> Used & Modified Containers </a></li>
@@ -118,6 +119,7 @@ function Header() {
                 
                 <li className="mx-4"><a href="/contact" className={`duration-100 text-l hover:text-brand-cyan`}>Contact Us</a></li>
                     <li className='flex h-1/2 items-center mx-1'><hr className="w-2 border-brand-cyan border-2"/></li>
+                <li className='ml-16 flex justify-between gap-x-5 h-2/3 items-center'><a><FacebookIcon/></a>  <a><InstagramIcon/></a> <a><LinkedinIcon/></a> <a><FaXTwitter/></a></li>    
             </ul>
         </div>
         
