@@ -36,7 +36,7 @@ function Header() {
                 <li className="mx-4 relative "><span className={`${staticPath === '/products' && 'scale-150 font-medium' } hover:text-brand-cyan`} onFocus={()=>setDrop(true)} onBlur={()=>setDrop(false)} onClick={()=>setDrop(!drop)}><a href="#" className="duration-100 text-l	">Products</a>{drop ?<ChevronUp strokeWidth={0.75}  className='inline' onClick={()=>setDrop(true)}/>:<ChevronDown strokeWidth={0.75} className='inline' onClick={()=>setDrop(false)}/>}</span>
                 {
                   drop &&
-                  <div className={`md:absolute md:-left-[11rem] w-full md:w-[38rem] py-5 px-2 bg-white md:shadow text-black z-20 flex gap-x-3 flex-col md:flex-row`} >
+                  <div className={`md:absolute md:-left-[11rem] w-full md:w-[38rem] py-5 px-1 md:px-2 bg-white md:shadow text-black z-20 flex gap-x-3 flex-col md:flex-row`} >
                 
                 <ul className='leading-loose'>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href="/products/building_materials">Building Material</a></li>
@@ -70,7 +70,7 @@ function Header() {
     }
     <div className="logo h-auto w-full z-10 md:h-24 bg-transparent absolute top-0 left-0 flex justify-between">
     
-      <img className="h-16 my-2 md:h-28 md:m-10 w-1/2 md:w-auto inline " src={logo} alt=""/>
+      <img className="h-12 my-2 md:h-28 md:m-10 w-1/2 md:w-auto inline " src={logo} alt=""/>
       <div className="menus  md:hidden flex justify-end w-1/3">
             {menu ? <button className='outline-none p-4 ' onClick={()=>setMenu(!menu)}><X/></button>:<button className='outline-none p-4 ' onClick={()=>setMenu(!menu)}><MenuIcon/></button>}
         </div>     
