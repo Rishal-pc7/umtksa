@@ -69,7 +69,7 @@ function Footer() {
          <li>Need Help?</li>
          <li>info@umtksa.com</li>
          <li>123 Hardware Lane, City</li>
-         <li className="flex justify-between md:mt-5 gap-x-4 absolute bottom-5 right-4 md:right-auto"><a><FacebookIcon/></a>  <a><InstagramIcon/></a> <a><LinkedinIcon/></a> <a><Twitter/></a> </li>
+         <li className="flex justify-between mt-5 gap-x-4 absolute bottom-5 right-4 md:right-auto"><a><FacebookIcon/></a>  <a><InstagramIcon/></a> <a><LinkedinIcon/></a> <a><Twitter/></a> </li>
          
          </ul>
       </div>
