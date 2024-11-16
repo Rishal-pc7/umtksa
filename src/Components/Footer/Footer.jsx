@@ -2,7 +2,7 @@ import { Copyright, FacebookIcon, InstagramIcon, LinkedinIcon, Twitter, TwitterI
 import footerBg from '../../assets/footer-bg.jpg'
 function Footer() {
   return (
-         <div className="relative h-[150vh] md:h-[55vh]  text-white ">
+         <div className="relative h-[135vh] md:h-[55vh]  text-white ">
         <div className="w-full h-full absolute opacity-80" style={{backgroundImage:`url(${footerBg})`,backgroundPosition:'center',backgroundSize:'cover'}} >
 
         </div>
