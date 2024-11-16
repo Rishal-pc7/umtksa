@@ -28,7 +28,7 @@ function Header() {
 
     {
       menu &&
-      <div className="absolute  bg-white w-2/3 py-28 h-auto min-h-screen">
+      <div className="absolute z-[75] bg-white w-2/3 py-28 h-auto min-h-screen">
       <div className={`${menu ? 'block' :'hidden'} md:block links mt-4 md:mt-0 w-full pl-4 pb-4 `}>
             <ul className="md:flex md:items-end  h-full leading-loose">
                 <li className="mx-4"><a href="/" className={`${location.pathname === '/' && 'scale-150 font-medium' }  duration-100 text-l hover:text-brand-cyan`}>Home</a></li>
@@ -68,13 +68,13 @@ function Header() {
 
       </div>
     }
-    <div className="logo h-auto w-full z-10 md:h-24 bg-transparent absolute top-0 left-0 flex justify-between">
+    <div className="logo h-auto w-full z-[75] md:h-24 bg-transparent absolute top-0 left-0 flex justify-between">
     <div className="h-14 m-2 md:h-28 md:m-10 w-2/3">
 
       <img className="" src={logo} alt=""/>
     </div>
-      <div className="menus z-50 right-0 flex md:hidden justify-end w-[20%]">
-            {menu ? <button className='outline-none p-4 bg-none z-50' onClick={()=>setMenu(!menu)}><X/></button>:<button className='outline-none p-4 bg-none z-50' onClick={()=>setMenu(!menu)}><MenuIcon/></button>}
+      <div className="menus z-[75]  flex md:hidden justify-end w-[20%]">
+            {menu ? <button className='outline-none p-4 bg-none ' onClick={()=>setMenu(!menu)}><X/></button>:<button className='outline-none p-4 bg-none' onClick={()=>setMenu(!menu)}><MenuIcon/></button>}
         </div>     
 
       <div className={`hidden relative md:flex md:h-20 md:w-1/2 md:rounded-bl-[80px] md:border-l-[20px] md:border-l-brand-cyan bg-white `}>
