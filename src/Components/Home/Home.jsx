@@ -194,31 +194,35 @@ function Home() {
     let navigate = useNavigate()
   return (
     <div className="">
-    <Carousel className='h-[75vh] md:h-screen w-full' plugins={[
-        Autoplay({
-          delay: 4000,
-          })]}
-          
-        orientation="vertical"
-    >
-        <CarouselContent className="mt-0 h-[75vh] md:h-screen w-full basis-full relative">
-            {hero.map((data,index)=>{
-                return(
-
-           <CarouselItem key={index} style={{backgroundImage:`url(${data.imgUrl})`}} className="slider from-left relative right-0 h-screen w-full  bg-center bg-cover bg-no-repeat ">
-
-        <div className="absolute inset-0 bg-white bg-gradient-to-r from-white from-20% to-transparent to-65% bg-opacity-25"></div>
-        <div className="flex justify-center text-brand-blue flex-col items-start px-6 md:px-32 h-full ">
+        <div className="relative h-[75vh] md:h-screen w-full">
+        <div className="flex justify-center absolute z-50  text-brand-blue flex-col items-start px-6 md:px-32 h-full ">
 
         {<p className={`font-semibold text-2xl md:text-5xl z-10`}   >Welcome to <span className="font-agency font-bold">UNITED MODE TRADING</span></p>}
         <p className="font-medium mt-3 text-base md:text-xl z-10">Reliable Partner in Material Supply for Construction Events and Industrial sectors </p>
         </div>
+    <Carousel className='' plugins={[
+        Autoplay({
+            delay: 4000,
+            
+        })]}
+        orientation="vertical"
+        >
+        <CarouselContent className="mt-0 h-[75vh] md:h-screen w-full basis-full">
+            {hero.map((data,index)=>{
+                return(
+
+           <CarouselItem key={index} style={{backgroundImage:`url(${data.imgUrl})`,backgroundPosition:'center',backgroundSize:'cover'}} className="slider from-left relative right-0 h-screen w-full">
+
+        <div className="absolute inset-0 bg-white bg-gradient-to-r from-white from-20% to-transparent to-65% bg-opacity-25"></div>
+        
            </CarouselItem>
                 )
             })}
         </CarouselContent>
 
     </Carousel>
+    
+    </div>
     <div className="relative h-full bg-white">
     <div className="absolute right-0 w-12 h-full hidden md:block">
     <div className="line line-1"></div>
@@ -227,7 +231,7 @@ function Home() {
         <div className="line line-4"></div>
         <div className="line line-5"></div>
     </div>
-    <div className="p-8 md:p-36 justify-between flex flex-wrap bg-white h-screen gap-y-2 md:gap-x-4 overflow-hidden">
+    <div className="p-8 md:p-36 justify-between flex flex-wrap bg-white  gap-y-2 md:gap-x-4 overflow-hidden">
 
         <div className={`content md:w-1/2 from-left slider`} > 
             <p className="text-lg font-medium  text-brand-blue">Learn More About Us</p>
@@ -269,7 +273,7 @@ function Home() {
         </div>
         
     </div>
-    <div className="curved bg-gradient-to-b overflow-hidden  md:h-[60vh] flex justify-between md:p-36 p-10" style={{clipPath:" ellipse(70% 100% at 50% 0)" }}>
+    <div className="curved bg-gradient-to-b overflow-hidden  md:h-[60vh] flex justify-between md:p-36  p-4 py-20">
         <img src={expoImg} className="h-20 md:h-40 marquee" alt="" />
         <img src={visionImg} className="h-20 md:h-40 marquee" alt="" />
         <img src={wcImg} className="h-20 md:h-40 marquee" alt="" />
