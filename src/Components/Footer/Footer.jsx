@@ -80,9 +80,9 @@ function Footer() {
         
       </div>
     </div>
-      <div className="flex flex-col  items-end md:flex-row justify-between px-4 md:px-36 py-6 md:pt-20 md:left-1/2 w-full transform md:-translate-x-1/2 absolute bottom-0 text-white">
+      <div className="flex flex-col  items-center md:flex-row justify-between px-4 md:px-36 py-6 md:pt-20 md:left-1/2 w-full transform md:-translate-x-1/2 absolute bottom-0 text-white">
 
-      <h2 className="font-normal basis-full md:basis-1/2 md:text-end text-lg md:text-xl mt-10 md:mt-5"> <Copyright className="inline"/> 2024 umtksa.com.All Rights reserved </h2>
+      <h2 className="font-normal basis-full md:basis-1/2 text-center md:text-end text-lg md:text-xl mt-10 md:mt-5"> <Copyright className="inline"/> 2024 umtksa.com.All Rights reserved </h2>
       <div className="flex md:w-auto w-1/2 justify-between mt-10 md:mt-5 gap-x-4 "><a><FacebookIcon/></a>  <a><InstagramIcon/></a> <a><LinkedinIcon/></a> <a><FaXTwitter size={'1.5em'}/></a> </div>
       </div>
     </div>
