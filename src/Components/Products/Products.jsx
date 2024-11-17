@@ -251,6 +251,7 @@ const brands = {
         {src:'/commercial-steel/b4.jpg'},
         {src:'/commercial-steel/b5.jpg'},
         {src:'/commercial-steel/b6.jpg'},
+        {src:'/commercial-steel/b7.jpg'},
         
     ],
     timber_and_plywood:[
@@ -278,6 +279,7 @@ const brands = {
         {src:'/fire-safety/b4.jpg'},
         {src:'/fire-safety/b5.jpg'},
         {src:'/fire-safety/b6.jpg'},
+        {src:'/fire-safety/b7.jpg'},
         
     ],
     cables__wires:[
@@ -287,6 +289,8 @@ const brands = {
         {src:'/cables-wires/b4.jpg'},
         {src:'/cables-wires/b5.jpg'},
         {src:'/cables-wires/b6.jpg'},
+        {src:'/cables-wires/b7.jpg'},
+        {src:'/cables-wires/b8.jpg'},
         
     ],
     electrical_and_plumbing_materials:[
@@ -296,6 +300,8 @@ const brands = {
         {src:'/electrical-plumbing/b4.jpg'},
         {src:'/electrical-plumbing/b5.jpg'},
         {src:'/electrical-plumbing/b6.jpg'},
+        {src:'/electrical-plumbing/b7.jpg'},
+        {src:'/electrical-plumbing/b8.jpg'},
         
     ],
     pumps__valves:[
@@ -332,6 +338,8 @@ const brands = {
         {src:'/it/b4.jpg'},
         {src:'/it/b5.jpg'},
         {src:'/it/b6.jpg'},
+        {src:'/it/b7.jpg'},
+        {src:'/it/b8.jpg'},
         
     ],
     waterproofing__thermal_insulation:[
@@ -341,6 +349,7 @@ const brands = {
         {src:'/waterproofing/b4.jpg'},
         {src:'/waterproofing/b5.jpg'},
         {src:'/waterproofing/b6.jpg'},
+        {src:'/waterproofing/b7.jpg'},
         
     ],
     general_hardware__tools:[
@@ -350,6 +359,8 @@ const brands = {
         {src:'/hardware-tools/b4.jpg'},
         {src:'/hardware-tools/b5.jpg'},
         {src:'/hardware-tools/b6.jpg'},
+        {src:'/hardware-tools/b7.jpg'},
+        {src:'/hardware-tools/b8.jpg'},
         
     ],
     events__exhibition_supplies:[
@@ -380,7 +391,7 @@ const brands = {
          
             
     </div>
-               <h1 className="capitalize font-medium  mt-16 z-50 text-xl md:text-4xl text-center text-brand-cyan" >{category?.split('_').join(' ')}</h1>
+               <h1 className="capitalize font-medium  mt-16 z-50 text-2xl md:text-4xl text-center text-brand-cyan" >{category?.split('_').join(' ')}</h1>
          <div className="content px-8 md:px-24 mt-14 text-lg w-full ">
             <h1 className="text-brand-blue text-xl text-justify leading-relaxed slider from-right">{details[category.split('&').join('')][0].content.split('\n').map((str,index) =>{ 
                 return(

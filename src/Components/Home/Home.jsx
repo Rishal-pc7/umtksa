@@ -274,10 +274,10 @@ function Home() {
         </div>
         
     </div>
-    <div className="curved bg-gradient-to-b overflow-hidden  md:h-[40vh] flex justify-between md:py-20 md:px-36  p-4 ">
-        <img src={expoImg} className="h-20 md:h-40 marquee" alt="" />
-        <img src={visionImg} className="h-20 md:h-40 marquee" alt="" />
-        <img src={wcImg} className="h-20 md:h-40 marquee" alt="" />
+    <div className="curved bg-gradient-to-b overflow-hidden  md:h-[40vh] flex justify-between md:py-20 md:px-36  py-10 px-1 ">
+        <img src={expoImg} className="h-[5.5rem] md:h-40 marquee" alt="" />
+        <img src={visionImg} className="h-[5.5rem] md:h-40 marquee" alt="" />
+        <img src={wcImg} className="h-[5.5rem] md:h-40 marquee" alt="" />
     </div>
     
             </div>
