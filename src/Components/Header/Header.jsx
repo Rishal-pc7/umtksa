@@ -80,7 +80,7 @@ function Header() {
       
 
       
-      <div className={`${menu ? 'block' :'hidden'} md:block links mt-4 text-lg text-brand-blue md:mt-0 w-full pl-12 pb-4 `}>
+      <div className={`${menu ? 'block' :'hidden'} md:block links mt-4 text-base text-brand-blue md:mt-0 w-full pl-12 pb-4 `}>
             <ul className="md:flex md:items-end  h-full leading-loose">
                 <li className='flex h-1/2 items-center mx-1'><hr className="w-2 border-brand-cyan border-2"/></li>
                 <li className="mx-4"><a href="/" className={`${location.pathname === '/' && 'scale-150 font-medium' }  duration-100 text-l hover:text-brand-cyan`}>Home</a></li>
@@ -90,7 +90,7 @@ function Header() {
                 <li className="mx-4 relative " onMouseOver={()=>setDrop(true)} onMouseOut={()=>setDrop(false)}><span className={`${staticPath === '/products' && 'scale-150 font-medium' } hover:text-brand-cyan`}><a href="" className="duration-100 text-l	">Products</a>{drop ?<ChevronUp strokeWidth={0.75}  className='inline' onClick={()=>setDrop(!drop)}/>:<ChevronDown strokeWidth={0.75} className='inline' onClick={()=>setDrop(!drop)}/>}</span>
                 {
                   drop&&
-                  <div className={`md:absolute md:-left-[11rem] w-full md:w-[41rem] py-5 px-2 bg-white md:shadow text-black z-20 flex gap-x-3 flex-col md:flex-row`} >
+                  <div className={`md:absolute md:-left-[11rem] w-full md:w-[38rem] py-5 px-2 bg-white md:shadow text-black z-20 flex gap-x-3 flex-col md:flex-row`} >
                 
                 <ul className='leading-loose basis-1/2' style={{wordBreak:'keep-all'}}>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href="/products/building_materials">Building Materials</a></li>

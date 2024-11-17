@@ -72,7 +72,7 @@ const details =[
     {
         id:6,
         imgurl:timberImg,
-        link:'/products/timber_&_plywood',
+        link:'/products/timber_and_plywood',
         class:'from-right',
         name:'Timber and Plywood',
         description:'Our selection of Timber and Plywood products offers durable and versatile solutions for both construction and event applications. '

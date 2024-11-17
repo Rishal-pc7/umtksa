@@ -263,15 +263,15 @@ const brands = {
         {src:'/timber-plywood/b6.jpg'},
         
     ],
-    scaffolding_and_accessories:[
-        {src:'/scaff-acc/b1.jpg'},
-        {src:'/scaff-acc/b2.jpg'},
-        {src:'/scaff-acc/b3.jpg'},
-        {src:'/scaff-acc/b4.jpg'},
-        {src:'/scaff-acc/b5.jpg'},
-        {src:'/scaff-acc/b6.jpg'},
+    // scaffolding_and_accessories:[
+    //     {src:'/scaff-acc/b1.jpg'},
+    //     {src:'/scaff-acc/b2.jpg'},
+    //     {src:'/scaff-acc/b3.jpg'},
+    //     {src:'/scaff-acc/b4.jpg'},
+    //     {src:'/scaff-acc/b5.jpg'},
+    //     {src:'/scaff-acc/b6.jpg'},
         
-    ],
+    // ],
     fire_and_safety_supplies:[
         {src:'/fire-safety/b1.jpg'},
         {src:'/fire-safety/b2.jpg'},
@@ -318,19 +318,17 @@ const brands = {
         {src:'/finishing-materials/b2.jpg'},
         {src:'/finishing-materials/b3.jpg'},
         {src:'/finishing-materials/b4.jpg'},
-        {src:'/finishing-materials/b5.jpg'},
-        {src:'/finishing-materials/b6.jpg'},
         
     ],
-    air_conditioning__HVAC_equipments:[
-        {src:'/ac-hvac/b1.jpg'},
-        {src:'/ac-hvac/b2.jpg'},
-        {src:'/ac-hvac/b3.jpg'},
-        {src:'/ac-hvac/b4.jpg'},
-        {src:'/ac-hvac/b5.jpg'},
-        {src:'/ac-hvac/b6.jpg'},
+    // air_conditioning__HVAC_equipments:[
+    //     {src:'/ac-hvac/b1.jpg'},
+    //     {src:'/ac-hvac/b2.jpg'},
+    //     {src:'/ac-hvac/b3.jpg'},
+    //     {src:'/ac-hvac/b4.jpg'},
+    //     {src:'/ac-hvac/b5.jpg'},
+    //     {src:'/ac-hvac/b6.jpg'},
         
-    ],
+    // ],
     IT__networking_equipments:[
         {src:'/it/b1.jpg'},
         {src:'/it/b2.jpg'},
@@ -363,24 +361,8 @@ const brands = {
         {src:'/hardware-tools/b8.jpg'},
         
     ],
-    events__exhibition_supplies:[
-        {src:'/events/b1.jpg'},
-        {src:'/events/b2.jpg'},
-        {src:'/events/b3.jpg'},
-        {src:'/events/b4.jpg'},
-        {src:'/events/b5.jpg'},
-        {src:'/events/b6.jpg'},
-        
-    ],
-    used__modified_containers :[
-        {src:'/used-containers/b1.jpg'},
-        {src:'/used-containers/b2.jpg'},
-        {src:'/used-containers/b3.jpg'},
-        {src:'/used-containers/b4.jpg'},
-        {src:'/used-containers/b5.jpg'},
-        {src:'/used-containers/b6.jpg'},
-        
-    ],
+    
+    
 
 }
     
@@ -431,7 +413,7 @@ const brands = {
             
          </div>
         <div className="w-full">
-        <div className="flex mt-16 flex-wrap w-full gap-x-1 gap-y-2">
+        <div className="flex mt-16 pb-16 flex-wrap w-full gap-x-1 gap-y-2">
         
         {
             details[category.split('&').join('')].map((item,index)=>{
@@ -451,7 +433,7 @@ const brands = {
         }
         </div>
     </div>
-        <Carousel className='w-full h-auto p-4 md:p-24 bg-white' plugins={[
+        {brands[category.split('&').join('')] && <Carousel className='w-full h-auto p-4 md:p-24 bg-white' plugins={[
             Autoplay({
                 delay: 2000,
             }),
@@ -469,7 +451,7 @@ const brands = {
         
         </CarouselContent>
 
-    </Carousel>
+    </Carousel>}
     </>
   )
 }

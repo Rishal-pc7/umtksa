@@ -4,7 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
-         <div className="relative h-[160vh] md:h-[65vh]  text-white ">
+         <div className="relative h-[210vh] md:h-[65vh]  text-white ">
         <div className="w-full h-full absolute opacity-80" style={{backgroundImage:`url(${footerBg})`,backgroundPosition:'center',backgroundSize:'cover'}} >
 
         </div>
@@ -80,10 +80,10 @@ function Footer() {
         
       </div>
     </div>
-      <div className="flex justify-between px-6 md:px-36 py-6 md:pt-20 md:left-1/2 w-full transform md:-translate-x-1/2 absolute bottom-0 text-white">
+      <div className="flex flex-col  items-end md:flex-row justify-between px-4 md:px-36 py-6 md:pt-20 md:left-1/2 w-full transform md:-translate-x-1/2 absolute bottom-0 text-white">
 
-      <h2 className="font-normal basis-1/2 text-end mt-10 md:mt-5"> <Copyright className="inline"/> 2024 umtksa.com.All Rights reserved </h2>
-      <div className="flex justify-between mt-10 md:mt-5 gap-x-4 "><a><FacebookIcon/></a>  <a><InstagramIcon/></a> <a><LinkedinIcon/></a> <a><FaXTwitter size={'1.5em'}/></a> </div>
+      <h2 className="font-normal basis-full md:basis-1/2 md:text-end text-lg md:text-xl mt-10 md:mt-5"> <Copyright className="inline"/> 2024 umtksa.com.All Rights reserved </h2>
+      <div className="flex md:w-auto w-1/2 justify-between mt-10 md:mt-5 gap-x-4 "><a><FacebookIcon/></a>  <a><InstagramIcon/></a> <a><LinkedinIcon/></a> <a><FaXTwitter size={'1.5em'}/></a> </div>
       </div>
     </div>
   )
