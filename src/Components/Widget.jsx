@@ -24,11 +24,11 @@ function Widget() {
     
     {show&&<div className="hidden md:flex fixed bottom-3  justify-between left-8  w-12 h-[60px] z-10" style={{background:`url(${mainLogo})`}}></div>}
     <div className=" whatsapp" onMouseOut={()=>setHover(false)} onMouseOver={()=>setHover(true)}  onFocus={()=>setHover(true)}  onBlur={()=>setHover(false)} >
-            <a href="" className='wtsp hover:p-5 gap-x-2 hover:w-auto'>
+            <a  target="_blank" href="https://wa.me/966542649546?text=I%27m%20interested%20in%20your%20Products" className='wtsp hover:p-5 gap-x-2 hover:w-auto'>
 
             <img src={logo} className={`${hover && '-ml-5'} h-6 w-12`} alt="" />
             {hover &&
-            <p className='font-medium text-base text-white'>+966 565 65 65544</p>
+            <p className='font-medium text-base text-white'>+966 542 649546</p>
           }   
             </a>
     </div>
