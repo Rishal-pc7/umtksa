@@ -6,7 +6,7 @@ import knipex from '../../assets/knipex.jpg'
 import wacker from '../../assets/wacker.jpg'
 import bosch from '../../assets/bosch.png'
 import dewalt from '../../assets/dewalt.png'
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function Products() {
     
@@ -365,10 +365,17 @@ const brands = {
     
 
 }
-    
+let mainRef = useRef(null)
+
+useEffect(()=>{
+    mainRef.current.focus()
+
+
+  
+},[])
     return (
         <>
-         <div className="slider from-left h-[85vh] w-full relative" style={{background:`url(${details[category.split('&').join('')][0].src})`,backgroundPosition:'center',backgroundSize:'cover'}}>
+         <div ref={mainRef} className="slider from-left h-[85vh] w-full relative" style={{background:`url(${details[category.split('&').join('')][0].src})`,backgroundPosition:'center',backgroundSize:'cover'}}>
     <div className='absolute bg-slate-500 inset-0 bg-opacity-30'></div>
          
             

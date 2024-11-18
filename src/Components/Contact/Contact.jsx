@@ -5,7 +5,7 @@ import { Textarea } from '../ui/textarea';
 import { Button } from '../ui/button';
 import { Label } from '../ui/label';
 import { Card, CardContent } from '../ui/card';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import {  CheckCircle, CircleX } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
@@ -19,11 +19,19 @@ const userSchema = z.object({
     message:z.string().min(10,'Min 10 characters required')
   });
   function Contact() {
+    const [success,setSuccess] = useState({status:false,content:'Thank You for Contacting Us'})
+    const [fail,setFail] = useState({status:false,content:''})
+    let mainRef = useRef(null)
+
+    useEffect(()=>{
+        mainRef.current.focus()
+
+
+      
+    },[])
     let navigate = useNavigate()
     const [formData, setFormData] = useState({ fname: '',lname:'', email: '',mobile:'',companyName:'',subject:'', message: '', });
     const [errors, setErrors] = useState({});
-    const [success,setSuccess] = useState({status:false,content:'Thank You for Contacting Us'})
-    const [fail,setFail] = useState({status:false,content:''})
     const handleChange = (e) => {
       const { name, value } = e.target;
       setFormData({ ...formData, [name]: value });
@@ -75,13 +83,13 @@ const userSchema = z.object({
     };
         
   return (
-    <div className={`${success.status && 'overflow-hidden h-screen relative'}`}>
+    <div ref={mainRef} className={`${success.status && 'md:overflow-hidden h-screen relative'}`}>
         {
       success.status || fail.status ? 
       <>
       <div className="absolute inset-0 bg-white bg-opacity-50"></div>
 
-        <Card  className='absolute top-1/2 left-1/2 w-[50%] h-96 -translate-x-1/2 -translate-y-1/2 transform shadow-lg'>
+        <Card  className='absolute top-1/2  left-1/2 w-[98%] md:w-[50%] h-96 -translate-x-1/2 -translate-y-1/2 transform shadow-lg'>
               <CardContent className='flex h-full w-full items-center flex-col justify-end'>
               {success.status&&<CheckCircle size={48} strokeWidth={3} className='text-green-500 text-5xl'/>}
               {fail.status&&<CircleX size={48} strokeWidth={3} className='text-red-500 text-5xl' />}
@@ -107,26 +115,29 @@ const userSchema = z.object({
         </div>
 
     </div>
-    <div className="flex justify-center w-full h-screen mt-16 relative">
+    <div className="flex justify-center w-full h-auto md:h-screen mt-16 relative">
     
-    <Card className='md:w-1/2 shadow-lg h-full'>
+    <Card className='md:w-1/2 w-full shadow-lg h-full'>
       <CardContent>
 
-    <form onSubmit={handleSubmit} className="space-y-4 p-12 md:p-22">
+    <form onSubmit={handleSubmit} className="space-y-4 p-4 md:p-22">
     <p className='font-bold text-xl md:text-4xl'>Get In Touch</p>
 
       {/* Name Field */} 
       <div className=''>
-        <Label htmlFor="name">Name</Label>
-        <div className='flex gap-x-1 md:gap-x-2'>
+        <Label className='hidden md:block' htmlFor="name">Name</Label>
+        <Label className='md:hidden' htmlFor="name">First Name</Label>
 
-        <div className="w-1/2">
+        <div className='flex flex-col md:flex-row gap-y-4 md:gap-x-2'>
+
+        <div className="md:w-1/2">
         <Input id="name" className='h-11' name='fname' value={formData.fname} onChange={handleChange} />
         {errors.fname && (
             <p className="text-red-600 text-sm">{errors.fname}</p>
         )}
         </div>
-        <div className="w-1/2">
+        <div className="md:w-1/2">
+        <Label className='md:hidden' htmlFor='lname'>Last Name</Label>
         <Input id="name" className='h-11' name='lname' value={formData.lname} onChange={handleChange} />
         {errors.lname && (
           <p className="text-red-600 text-sm">{errors.lname}</p>
