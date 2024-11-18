@@ -18,11 +18,11 @@ const userSchema = z.object({
     message:z.string().min(10,'Min 10 characters required')
   });
   function Contact() {
-    useEffect(()=>{
-      window.scrollTo(0,0)
-  },[])
     const [success,setSuccess] = useState({status:false,content:'Thank You for Contacting Us'})
     const [fail,setFail] = useState({status:false,content:''})
+    useEffect(()=>{
+      window.scrollTo(0,0)
+  },[success,fail])
     const [formData, setFormData] = useState({ fname: '',lname:'', email: '',mobile:'',companyName:'',subject:'', message: '', });
     const [errors, setErrors] = useState({});
     const handleChange = (e) => {
@@ -80,13 +80,13 @@ const userSchema = z.object({
         {
       success.status || fail.status ? 
       <>
-      <div className="absolute inset-0 bg-white bg-opacity-50"></div>
+      <div  className="absolute inset-0 bg-white bg-opacity-50"></div>
 
-        <Card  className='absolute top-1/2  left-1/2 w-[98%] md:w-[50%] h-96 -translate-x-1/2 -translate-y-1/2 transform shadow-lg'>
+        <Card   className='absolute top-1/2  left-1/2 w-[95%] md:w-[50%] h-96 -translate-x-1/2 -translate-y-1/2 transform shadow-lg'>
               <CardContent className='flex h-full w-full items-center flex-col justify-end'>
               {success.status&&<CheckCircle size={48} strokeWidth={3} className='text-green-500 text-5xl'/>}
               {fail.status&&<CircleX size={48} strokeWidth={3} className='text-red-500 text-5xl' />}
-              <h2 className='text-3xl font-bold text-gray-900 mt-4'>Thank You For Contacting Us </h2>
+              <h2 className=' text-xl text-center md:text-3xl font-bold text-gray-900 mt-4'>Thank You For Contacting Us </h2>
               <Button onClick={()=>{location.href='/contact'
                 setSuccess({...success,status:false})
                 setFail({...fail,status:false})}} className="w-1/2 mt-28">
