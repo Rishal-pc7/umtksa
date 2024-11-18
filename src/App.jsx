@@ -6,10 +6,20 @@ import Contact from "./Components/Contact/Contact"
 import Products from "./Components/Products/Products"
 import Footer from "./Components/Footer/Footer"
 import Widget from "./Components/Widget"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
 function App() {
+  const [count,setCount] = useState(0)
   useEffect(() => {
+    const storedCount = localStorage.getItem('pageVisits')
+    const initialCount = Number(storedCount) || 0
+    setCount(initialCount + 1)
+    localStorage.setItem('pageVisits',initialCount + 1)
+    console.log(count);
+    
+  },[])
+  useEffect(() => {
+
     const sliders=document.querySelectorAll('.slider')
     const options={
       threshold:0,

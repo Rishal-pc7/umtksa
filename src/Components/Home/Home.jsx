@@ -8,7 +8,7 @@ import about from '../../assets/about-home.jpg'
 import heroBg1 from  '../../assets/hero-bg-1.jpeg'
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import {  useState,useEffect, useRef } from "react";
+import {  useState,useEffect } from "react";
 import expoImg from '../../assets/expo.png'
 import wcImg from '../../assets/saudiwc.png'
 import visionImg from '../../assets/vision2030.png'
@@ -189,20 +189,16 @@ const hero= [
 
 ]
 function Home() {
-    let mainRef = useRef(null)
 
     useEffect(()=>{
-        mainRef.current.focus()
-
-
-      
+        window.scrollTo(0,0)
     },[])
     
     const [hover,setHover]=useState()
     let navigate = useNavigate()
   return (
     <div className="">
-        <div ref={mainRef} className="relative h-[75vh] md:h-screen w-full">
+        <div className="relative h-[75vh] md:h-screen w-full">
         <div className="flex justify-center absolute z-50  text-brand-blue flex-col items-start px-6 md:px-32 h-full ">
 
         {<p className={`font-semibold text-2xl md:text-5xl z-10`}   >Welcome to <span className="font-agency font-bold">UNITED MODE TRADING</span></p>}

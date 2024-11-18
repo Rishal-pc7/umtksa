@@ -1,18 +1,13 @@
-import { useEffect, useRef } from 'react'
+import { useEffect } from 'react'
 import heroImg from '../../assets/about-hero.jpg'
 import cmMessage from '../../assets/cm-msg.jpeg'
 function About() {
-    let mainRef = useRef(null)
-
     useEffect(()=>{
-        mainRef.current.focus()
-
-
-      
+        window.scrollTo(0,0)
     },[])
   return (
     <>
-    <div ref={mainRef} style={{backgroundImage:`url('${heroImg}')`}} className='w-full relative slider from-left h-[75vh] bg-cover bg-center'>
+    <div style={{backgroundImage:`url('${heroImg}')`}} className='w-full relative slider from-left h-[75vh] bg-cover bg-center'>
     <div className='absolute bg-slate-500 inset-0 bg-opacity-45'></div>
     <div className="flex justify-center text-white flex-col items-center h-full ">
 

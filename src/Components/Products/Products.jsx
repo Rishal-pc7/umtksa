@@ -1,17 +1,13 @@
 import { useParams } from "react-router-dom"
 import { Carousel, CarouselContent,CarouselItem } from "../ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import esab from '../../assets/esab.jpg'
-import knipex from '../../assets/knipex.jpg'
-import wacker from '../../assets/wacker.jpg'
-import bosch from '../../assets/bosch.png'
-import dewalt from '../../assets/dewalt.png'
-import { useEffect, useRef, useState } from "react";
+import { useEffect  } from "react";
 
 function Products() {
-    
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
     const { category } = useParams();
-    const [hover,setHover] = useState()
     const details=
     {
         building_materials :[
@@ -365,17 +361,11 @@ const brands = {
     
 
 }
-let mainRef = useRef(null)
-
-useEffect(()=>{
-    mainRef.current.focus()
 
 
-  
-},[])
     return (
         <>
-         <div ref={mainRef} className="slider from-left h-[85vh] w-full relative" style={{background:`url(${details[category.split('&').join('')][0].src})`,backgroundPosition:'center',backgroundSize:'cover'}}>
+         <div  className="slider from-left h-[85vh] w-full relative" style={{background:`url(${details[category.split('&').join('')][0].src})`,backgroundPosition:'center',backgroundSize:'cover'}}>
     <div className='absolute bg-slate-500 inset-0 bg-opacity-30'></div>
          
             
@@ -427,7 +417,7 @@ useEffect(()=>{
                 if(index !== 0){
 
                     return(
-                        <div key={index} className={`basis-full md:basis-[33%] relative h-[33rem] slider from-left`} style={{background:`url(${item.src})`,backgroundRepeat:'no-repeat',backgroundSize:'cover',backgroundPosition:'center'}} onMouseOver={()=>setHover(item.id)} onFocus={()=>setHover(item.id)} onBlur={()=>setHover()} onMouseLeave={()=>setHover()}>
+                        <div key={index} className={`basis-full md:basis-[33%] relative h-[33rem] slider from-left`} style={{background:`url(${item.src})`,backgroundRepeat:'no-repeat',backgroundSize:'cover',backgroundPosition:'center'}} >
                     <div className="absolute inset-0 bg-brand-blue opacity-30 flex items-center justify-center"></div>
                     </div>
                 )

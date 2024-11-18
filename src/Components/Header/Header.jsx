@@ -1,29 +1,15 @@
 import {ChevronDown, ChevronUp, FacebookIcon, InstagramIcon, LinkedinIcon, MenuIcon, X,} from 'lucide-react'
-import { useState,useEffect } from 'react'
+import { useState} from 'react'
 import {useLocation } from 'react-router-dom'
 import logo from '../../assets/mainlogo.png'
 import { FaXTwitter } from "react-icons/fa6";
 function Header() {
     const [drop,setDrop] = useState(false)
     const [menu,setMenu] = useState(false)
-    const [isScrolled, setIsScrolled] = useState(false);
     const location =useLocation()
     let fullPath=location.pathname
     const staticPath = fullPath.split('/').slice(0, 2).join('/');
-  // Function to handle scroll event
-  const handleScroll = () => {
-    if (window.scrollY > 50) {
-      setIsScrolled(true);
-    } else {
-      setIsScrolled(false);
-    }
-  };
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+   
   return (
     <>
 

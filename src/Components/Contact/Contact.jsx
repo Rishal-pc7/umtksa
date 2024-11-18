@@ -5,10 +5,9 @@ import { Textarea } from '../ui/textarea';
 import { Button } from '../ui/button';
 import { Label } from '../ui/label';
 import { Card, CardContent } from '../ui/card';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import {  CheckCircle, CircleX } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
 const userSchema = z.object({
     fname: z.string().min(2, "First name must be at least 2 characters.",),
     email: z.string().email("Invalid email address"),
@@ -19,17 +18,11 @@ const userSchema = z.object({
     message:z.string().min(10,'Min 10 characters required')
   });
   function Contact() {
+    useEffect(()=>{
+      window.scrollTo(0,0)
+  },[])
     const [success,setSuccess] = useState({status:false,content:'Thank You for Contacting Us'})
     const [fail,setFail] = useState({status:false,content:''})
-    let mainRef = useRef(null)
-
-    useEffect(()=>{
-        mainRef.current.focus()
-
-
-      
-    },[])
-    let navigate = useNavigate()
     const [formData, setFormData] = useState({ fname: '',lname:'', email: '',mobile:'',companyName:'',subject:'', message: '', });
     const [errors, setErrors] = useState({});
     const handleChange = (e) => {
@@ -83,7 +76,7 @@ const userSchema = z.object({
     };
         
   return (
-    <div ref={mainRef} className={`${success.status && 'md:overflow-hidden h-screen relative'}`}>
+    <div className={`${success.status && 'md:overflow-hidden h-screen relative'}`}>
         {
       success.status || fail.status ? 
       <>
