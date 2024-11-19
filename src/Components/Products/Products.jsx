@@ -109,7 +109,7 @@ function Products() {
     ],
     air_conditioning__HVAC_equipments:[
             
-        {src:'/ac-hvac/ac-hero.jpg',content:"We specialize in the trade of reliable air conditioning and HVAC equipment and accessories, serving a wide range of sectors, including residential, commercial, construction, industrial, and events. Our comprehensive product portfolio includes energy-efficient air conditioners, advanced heating and cooling systems, ventilation solutions, and essential accessories such as thermostats, filters, and ducting. Whether outfitting homes, commercial properties, construction sites, industrial facilities, or managing climate control for events, we deliver customized, market-ready solutions to meet your specific needs. In collaboration with trusted manufacturers, we ensure all products are durable, efficient, and competitively priced. We also provide expert guidance and seamless support throughout each stage of your project, ensuring optimal indoor climate solutions tailored to your requirements.",listHead:'Our Air Conditioning Types Include:',
+        {src:'/ac-hvac/hero.jpg',content:"We specialize in the trade of reliable air conditioning and HVAC equipment and accessories, serving a wide range of sectors, including residential, commercial, construction, industrial, and events. Our comprehensive product portfolio includes energy-efficient air conditioners, advanced heating and cooling systems, ventilation solutions, and essential accessories such as thermostats, filters, and ducting. Whether outfitting homes, commercial properties, construction sites, industrial facilities, or managing climate control for events, we deliver customized, market-ready solutions to meet your specific needs. In collaboration with trusted manufacturers, we ensure all products are durable, efficient, and competitively priced. We also provide expert guidance and seamless support throughout each stage of your project, ensuring optimal indoor climate solutions tailored to your requirements.",listHead:'Our Air Conditioning Types Include:',
             list:[
                 'Split System AC:\\ Ideal for both residential and commercial spaces, offering quiet operation and efficient cooling.',
                 'Window AC Units:\\ Compact and cost-effective solutions for single rooms or smaller spaces.',
@@ -149,7 +149,7 @@ function Products() {
     ],
     waterproofing__thermal_insulation:[
         
-    {src:'/waterproofing/waterproofing-hero.jpg',content:"We specialize in providing high-quality waterproofing and thermal insulation materials designed to meet the demanding needs of the construction and industrial sectors. Our product range includes advanced solutions for protecting structures from water ingress, moisture damage, and thermal fluctuations, ensuring long-lasting durability and energy efficiency. Whether you're working on commercial buildings, industrial facilities, infrastructure projects, construction projects, or repair works, we deliver all required materials to your project sites on time, ensuring smooth progress and timely completion. We partner with trusted manufacturers to deliver reliable, cost-effective solutions that meet industry standards and environmental regulations, helping you achieve high-performance results on every project.",listHead:'Our Products Include:',
+    {src:'/waterproofing/hero.jpg',content:"We specialize in providing high-quality waterproofing and thermal insulation materials designed to meet the demanding needs of the construction and industrial sectors. Our product range includes advanced solutions for protecting structures from water ingress, moisture damage, and thermal fluctuations, ensuring long-lasting durability and energy efficiency. Whether you're working on commercial buildings, industrial facilities, infrastructure projects, construction projects, or repair works, we deliver all required materials to your project sites on time, ensuring smooth progress and timely completion. We partner with trusted manufacturers to deliver reliable, cost-effective solutions that meet industry standards and environmental regulations, helping you achieve high-performance results on every project.",listHead:'Our Products Include:',
         list:['Bituminous membrane waterproofing',
               'PVC membrane Waterproofing',
               'EPDM (Rubberized) membrane waterproofing',
@@ -167,6 +167,9 @@ function Products() {
     {src:`/waterproofing/1.jpg`},
     {src:`/waterproofing/2.jpg`},
     {src:`/waterproofing/3.jpg`},
+    {src:`/waterproofing/4.jpg`},
+    {src:`/waterproofing/5.jpg`},
+    {src:`/waterproofing/6.jpg`},
 ],
 general_hardware__tools:[
     {src:'/hardware-tools/hardware-hero.jpg',content:"We offer a comprehensive range of general hardware, tools, and accessories tailored to meet the diverse needs of the construction, industrial sector, and event management industries. Our product selection includes high-quality tools and materials designed to ensure efficiency, safety, and high performance for every type of project. Whether you're building structures, maintaining machinery, or organizing large-scale events, we provide reliable solutions sourced from trusted brands for durability and precision. We also offer a variety of event-specific accessories, such as temporary staging systems, lighting fixtures, and crowd control barriers. With timely delivery and competitive pricing, we are committed to providing the right solutions to help you complete your projects on time and to the highest standard.",listHead:'Our Products Include:',
@@ -259,15 +262,6 @@ const brands = {
         {src:'/timber-plywood/b6.jpg'},
         
     ],
-    // scaffolding_and_accessories:[
-    //     {src:'/scaff-acc/b1.jpg'},
-    //     {src:'/scaff-acc/b2.jpg'},
-    //     {src:'/scaff-acc/b3.jpg'},
-    //     {src:'/scaff-acc/b4.jpg'},
-    //     {src:'/scaff-acc/b5.jpg'},
-    //     {src:'/scaff-acc/b6.jpg'},
-        
-    // ],
     fire_and_safety_supplies:[
         {src:'/fire-safety/b1.jpg'},
         {src:'/fire-safety/b2.jpg'},
@@ -316,15 +310,16 @@ const brands = {
         {src:'/finishing-materials/b4.jpg'},
         
     ],
-    // air_conditioning__HVAC_equipments:[
-    //     {src:'/ac-hvac/b1.jpg'},
-    //     {src:'/ac-hvac/b2.jpg'},
-    //     {src:'/ac-hvac/b3.jpg'},
-    //     {src:'/ac-hvac/b4.jpg'},
-    //     {src:'/ac-hvac/b5.jpg'},
-    //     {src:'/ac-hvac/b6.jpg'},
+    air_conditioning__HVAC_equipments:[
+        {src:'/ac-hvac/b1.jpg'},
+        {src:'/ac-hvac/b2.jpg'},
+        {src:'/ac-hvac/b3.jpg'},
+        {src:'/ac-hvac/b4.jpg'},
+        {src:'/ac-hvac/b5.jpg'},
+        {src:'/ac-hvac/b6.jpg'},
+        {src:'/ac-hvac/b7.jpg'},
         
-    // ],
+    ],
     IT__networking_equipments:[
         {src:'/it/b1.jpg'},
         {src:'/it/b2.jpg'},
@@ -435,7 +430,7 @@ const brands = {
                 delay: 2000,
             }),
         ]}>
-            <h1 className="text-2xl md:text-4xl text-brand-cyan font-bold text-center mb-16">Brands we deal With</h1>
+            <h1 className="text-2xl md:text-4xl text-brand-cyan font-bold text-center mb-16">Brands we deal with</h1>
         <CarouselContent className='flex justify-between w-full '>
             {
                 brands[category.split('&').join('')].map((item,index)=>{
