@@ -1,6 +1,6 @@
-import { Copyright, FacebookIcon, InstagramIcon, LinkedinIcon} from "lucide-react"
+import { Copyright, FacebookIcon, InstagramIcon} from "lucide-react"
 import footerBg from '../../assets/footer-bg.jpg'
-import { FaXTwitter } from "react-icons/fa6";
+import { FaSnapchat, FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -83,7 +83,7 @@ function Footer() {
       <div className="flex flex-col  items-center md:flex-row justify-between px-4 md:px-36 py-6 md:pt-20 md:left-1/2 w-full transform md:-translate-x-1/2 absolute bottom-0 text-white">
 
       <h2 className="font-normal basis-full md:basis-1/2 text-center md:text-end text-lg md:text-xl mt-10 md:mt-5"> <Copyright className="inline"/> 2024 umtksa.com.All Rights reserved </h2>
-      <div className="flex md:w-auto w-1/2 justify-between mt-10 md:mt-5 gap-x-4 "><a><FacebookIcon/></a>  <a><InstagramIcon/></a> <a><LinkedinIcon/></a> <a><FaXTwitter size={'1.5em'}/></a> </div>
+      <div className="flex md:w-auto w-1/2 justify-between mt-10 md:mt-5 gap-x-4 "><a href="https://www.facebook.com/share/19ei6WHYgS/"><FacebookIcon/></a>  <a href="https://www.instagram.com/umt.ksa/profilecard/?igsh=anlkZXZxdWs3Nmp2"><InstagramIcon/></a> <a><FaSnapchat size={'1.5em'}/></a> <a href="https://x.com/unitedmodeksa?s=09"><FaXTwitter  size={'1.5em'}/></a> </div>
       </div>
     </div>
   )

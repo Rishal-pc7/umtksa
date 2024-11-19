@@ -1,8 +1,8 @@
-import {ChevronDown, ChevronUp, FacebookIcon, InstagramIcon, LinkedinIcon, MenuIcon, X,} from 'lucide-react'
+import {ChevronDown, ChevronUp, FacebookIcon, InstagramIcon,  MenuIcon, X,} from 'lucide-react'
 import { useState} from 'react'
 import {useLocation } from 'react-router-dom'
 import logo from '../../assets/mainlogo.png'
-import { FaXTwitter } from "react-icons/fa6";
+import { FaSnapchat,  FaXTwitter } from "react-icons/fa6";
 function Header() {
     const [drop,setDrop] = useState(false)
     const [menu,setMenu] = useState(false)
@@ -105,7 +105,7 @@ function Header() {
                 
                 <li className="mx-4"><a href="/contact" className={`duration-100 text-l hover:text-brand-cyan`}>Contact Us</a></li>
                     <li className='flex h-1/2 items-center mx-1'><hr className="w-2 border-brand-cyan border-2"/></li>
-                <li className='ml-8 flex justify-between gap-x-4 h-2/3 items-center'><a><FacebookIcon/></a>  <a><InstagramIcon/></a> <a><LinkedinIcon/></a> <a><FaXTwitter/></a></li>    
+                <li className='absolute right-4 top-1/2 transform -translate-y-[35%]  flex justify-between gap-x-4 h-2/3 items-center'><a href='https://www.facebook.com/share/19ei6WHYgS/'><FacebookIcon/></a>  <a href='https://www.instagram.com/umt.ksa/profilecard/?igsh=anlkZXZxdWs3Nmp2'><InstagramIcon/></a> <a href='https://www.snapchat.com/add/umtksa?share_id=kL6jhloj2Ts&locale=en-IN'><FaSnapchat size={'1.5em'}/></a> <a href='https://x.com/unitedmodeksa?s=09'><FaXTwitter/></a></li>    
             </ul>
         </div>
         
