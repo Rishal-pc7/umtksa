@@ -26,14 +26,14 @@ function Widget() {
 
     {show&&<div className="hidden md:flex fixed bottom-3  justify-between left-8  w-12 h-[60px] z-10" style={{background:`url(${mainLogo})`}}></div>}
     <div className="whatsapp">
-            <a  target="_blank" href="mailto:sales@umtksa.com" className={`bottom-3 ${show ? 'left-24' : 'left-8'} gap-x-2 p-5 w-auto text-white`}>
+            <a  target="_blank" href="mailto:sales@umtksa.com" className={`bottom-3 ${show ? 'right-4 md:right-auto md:left-24' : 'right-4 md:right-auto md:left-8'} gap-x-2 p-5 w-auto text-white`}>
                <MailIcon/> <span>For Enquires sales@umtksa.com</span>
               
             </a>
     </div>
     </div>
     <div className=" whatsapp" onMouseOut={()=>setHover(false)} onMouseOver={()=>setHover(true)}  onFocus={()=>setHover(true)}  onBlur={()=>setHover(false)} >
-            <a  target="_blank" href="https://wa.me/966542649546?text=I%27m%20interested%20in%20your%20Products" className='wtsp hover:p-5 gap-x-2 hover:w-auto'>
+            <a  target="_blank" href="https://wa.me/966542649546?text=I%27m%20interested%20in%20your%20Products" className='wtsp bottom-20 md:bottom-3 right-4 hover:p-5 gap-x-2 hover:w-auto'>
 
             <img src={logo} className={`${hover && '-ml-5'} h-6 w-12`} alt="" />
             {hover &&

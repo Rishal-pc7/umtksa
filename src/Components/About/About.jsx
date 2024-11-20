@@ -35,16 +35,16 @@ function About() {
     </div>
         <hr className="w-full border-gray-300 my-4"/>
               <div className="flex flex-col px-1 md:p-4 slider from-left">
-                 <div className="text-blue font-bold text-3xl text-brand-cyan">Our Mission </div>
+                 <div className="text-blue font-bold text-xl md:text-3xl text-brand-cyan">Our Mission </div>
                  <div className="text-blue font-normal text-xl text-justify mt-4 text-brand-blue">At UNITED MODE TRADING, our mission is to be your steadfast partner in the project material trading industry. We are dedicated to delivering reliable service and ensuring the timely provision of materials that cater to the diverse needs of our clients in the construction, events, and industrial sectors. Our commitment lies in fostering enduring relationships founded on integrity, transparency, and shared success.</div>
              </div>    
               <div className="flex flex-col mt-5 px-1  md:p-4 slider from-left">
-                 <div className="text-blue font-bold text-3xl text-brand-cyan">Our Vision</div>
+                 <div className="text-blue font-bold text-xl md:text-3xl text-brand-cyan">Our Vision</div>
                  <div className="text-blue font-normal text-xl text-justify text-brand-blue mt-4 text-br">Our vision is to set the benchmark as the premier provider in the project materials sector, celebrated for our vast selection and exemplary service. We constantly innovate and adapt to client needs, ensuring our solutions are not only relevant but industry-leading. Through a commitment to excellence and customer focus, we’re driven to support the success of every project we supply</div>
              </div>    
 
     </div>
-    <div className="w-full relative h-[70vh] md:h-[70vh] bg-cover bg-center md:bg-right mb-10 slider from-right"  style={{backgroundImage:`url('${cmMessage}')`}}>
+    <div className="w-full relative h-[90vh] md:h-[70vh] bg-cover bg-center md:bg-right mb-10 slider from-right"  style={{backgroundImage:`url('${cmMessage}')`}}>
     <div className='absolute bg-black inset-0 bg-opacity-50'></div>
     <div className="flex justify-center text-white flex-col items-center h-full ">
 

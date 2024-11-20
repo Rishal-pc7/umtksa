@@ -70,6 +70,8 @@ function Footer() {
          <ul className="flex flex-col w-full items-start leading-loose mt-5 md:mt-0 text-lg">
          <li>For Enquiries</li>
          <li>sales@umtksa.com</li>
+         <li>+966 54 265 0102</li>
+         <li>+966 54 271 8370</li>
          <li className='md:mt-5'>Prince Muhammad Ibn Salman Ibn Abdulaziz Rd,</li> 
          <li>Building No: 3517, P O Box: 1334,</li>
          <li>Riyadh- Saudi Arabia</li>

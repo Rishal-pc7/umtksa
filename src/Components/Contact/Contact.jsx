@@ -199,9 +199,15 @@ const userSchema = z.object({
             Visit us for quality construction and plumbing materials. We are dedicated to providing the best hardware solutions for your projects
             </h1>
             <p className='font-bold text-lg mt-14 md:text-xl'>Address</p>
-            <h1 className='font-normal text-slate-500 text-md md:text-lg'>123 Hardware Lane, City</h1>
+            <h1 className='font-normal text-slate-500 text-md md:text-lg mt-1'>Prince Muhammad Ibn Salman Ibn</h1>
+            <h1 className='font-normal text-slate-500 text-md mt-1 md:text-lg'>Abdulaziz Rd,</h1>
+            <h1 className='font-normal text-slate-500 text-md mt-1 md:text-lg'>Building No: 3517, P O Box: 1334,</h1>
+            <h1 className='font-normal text-slate-500 text-md mt-1 md:text-lg'>Riyadh- Saudi Arabia</h1>
+            <p className='font-bold text-lg mt-4 md:text-xl'>Connect Us</p>
+            <h1 className='font-normal text-slate-500 text-md md:text-lg mt-1'>+966 54 265 0102</h1>
+            <h1 className='font-normal text-slate-500 text-md md:text-lg mt-1'>+966 54 271 8370</h1>
             <p className='font-bold text-lg mt-4 md:text-xl'>Hours</p>
-            <h1 className='font-normal text-slate-500 text-md md:text-lg'>9 AM - 5 PM</h1>
+            <h1 className='font-normal text-slate-500 text-md md:text-lg mt-1'>9 AM - 5 PM</h1>
 
         </div>
         <div className="w-full md:w-1/2 h-[25vh] mt-7 md:mt-0 md:h-[75vh]">

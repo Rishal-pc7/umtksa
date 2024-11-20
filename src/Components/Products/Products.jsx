@@ -236,17 +236,17 @@ const brands = {
     ],
     construction_materials:[
         {src:'/construction-materials/b1.jpg'},
-        {src:'/construction-materials/b2.jpg'},
+        {src:'/construction-materials/b2.png'},
         {src:'/construction-materials/b3.jpg'},
         {src:'/construction-materials/b4.jpg'},
         {src:'/construction-materials/b5.jpg'},
-        {src:'/construction-materials/b6.jpg'},
+        {src:'/construction-materials/b6.png'},
         
     ],
     commercial_steel:[
-        {src:'/commercial-steel/b1.jpg'},
-        {src:'/commercial-steel/b2.jpg'},
-        {src:'/commercial-steel/b3.jpg'},
+        {src:'/commercial-steel/b1.png'},
+        {src:'/commercial-steel/b2.png'},
+        {src:'/commercial-steel/b3.png'},
         {src:'/commercial-steel/b4.jpg'},
         {src:'/commercial-steel/b5.jpg'},
         {src:'/commercial-steel/b6.jpg'},
@@ -254,12 +254,12 @@ const brands = {
         
     ],
     timber_and_plywood:[
-        {src:'/timber-plywood/b1.jpg'},
+        {src:'/timber-plywood/b1.png'},
         {src:'/timber-plywood/b2.jpg'},
         {src:'/timber-plywood/b3.jpg'},
         {src:'/timber-plywood/b4.jpg'},
-        {src:'/timber-plywood/b5.jpg'},
-        {src:'/timber-plywood/b6.jpg'},
+        {src:'/timber-plywood/b5.png'},
+        {src:'/timber-plywood/b6.png'},
         
     ],
     fire_and_safety_supplies:[
@@ -273,21 +273,20 @@ const brands = {
         
     ],
     cables__wires:[
-        {src:'/cables-wires/b1.jpg'},
-        {src:'/cables-wires/b2.jpg'},
-        {src:'/cables-wires/b3.jpg'},
-        {src:'/cables-wires/b4.jpg'},
+        {src:'/cables-wires/b1.png'},
+        {src:'/cables-wires/b2.png'},
+        {src:'/cables-wires/b3.png'},
+        {src:'/cables-wires/b4.png'},
         {src:'/cables-wires/b5.jpg'},
         {src:'/cables-wires/b6.jpg'},
-        {src:'/cables-wires/b7.jpg'},
-        {src:'/cables-wires/b8.jpg'},
+        {src:'/cables-wires/b7.png'},
         
     ],
     electrical_and_plumbing_materials:[
         {src:'/electrical-plumbing/b1.jpg'},
-        {src:'/electrical-plumbing/b2.jpg'},
-        {src:'/electrical-plumbing/b3.jpg'},
-        {src:'/electrical-plumbing/b4.jpg'},
+        {src:'/electrical-plumbing/b2.png'},
+        {src:'/electrical-plumbing/b3.png'},
+        {src:'/electrical-plumbing/b4.png'},
         {src:'/electrical-plumbing/b5.jpg'},
         {src:'/electrical-plumbing/b6.jpg'},
         {src:'/electrical-plumbing/b7.jpg'},
@@ -297,7 +296,7 @@ const brands = {
     pumps__valves:[
         {src:'/valves-pumps/b1.jpg'},
         {src:'/valves-pumps/b2.jpg'},
-        {src:'/valves-pumps/b3.jpg'},
+        {src:'/valves-pumps/b3.png'},
         {src:'/valves-pumps/b4.jpg'},
         {src:'/valves-pumps/b5.jpg'},
         {src:'/valves-pumps/b6.jpg'},
@@ -308,12 +307,16 @@ const brands = {
         {src:'/finishing-materials/b2.jpg'},
         {src:'/finishing-materials/b3.jpg'},
         {src:'/finishing-materials/b4.jpg'},
+        {src:'/finishing-materials/b5.jpg'},
+        {src:'/finishing-materials/b6.jpg'},
+        {src:'/finishing-materials/b7.jpg'},
+        {src:'/finishing-materials/b8.png'},
         
     ],
     air_conditioning__HVAC_equipments:[
         {src:'/ac-hvac/b1.jpg'},
-        {src:'/ac-hvac/b2.jpg'},
-        {src:'/ac-hvac/b3.jpg'},
+        {src:'/ac-hvac/b2.png'},
+        {src:'/ac-hvac/b3.png'},
         {src:'/ac-hvac/b4.jpg'},
         {src:'/ac-hvac/b5.jpg'},
         {src:'/ac-hvac/b6.jpg'},
@@ -322,23 +325,23 @@ const brands = {
     ],
     IT__networking_equipments:[
         {src:'/it/b1.jpg'},
-        {src:'/it/b2.jpg'},
-        {src:'/it/b3.jpg'},
-        {src:'/it/b4.jpg'},
+        {src:'/it/b2.png'},
+        {src:'/it/b3.png'},
+        {src:'/it/b4.png'},
         {src:'/it/b5.jpg'},
         {src:'/it/b6.jpg'},
-        {src:'/it/b7.jpg'},
-        {src:'/it/b8.jpg'},
+        {src:'/it/b7.png'},
+        {src:'/it/b8.png'},
         
     ],
     waterproofing__thermal_insulation:[
         {src:'/waterproofing/b1.jpg'},
         {src:'/waterproofing/b2.jpg'},
-        {src:'/waterproofing/b3.jpg'},
+        {src:'/waterproofing/b3.png'},
         {src:'/waterproofing/b4.jpg'},
         {src:'/waterproofing/b5.jpg'},
         {src:'/waterproofing/b6.jpg'},
-        {src:'/waterproofing/b7.jpg'},
+        {src:'/waterproofing/b7.png'},
         
     ],
     general_hardware__tools:[
@@ -436,7 +439,7 @@ const brands = {
                 brands[category.split('&').join('')].map((item,index)=>{
                     return(
 
-                        <CarouselItem key={index} className="basis-1/2 md:basis-1/4"><img src={item.src} alt="" /></CarouselItem>
+                        <CarouselItem key={index} className="basis-1/2 md:basis-1/4"><img src={item.src} className="w-full h-28" alt="" /></CarouselItem>
                     )
                 })
             }
