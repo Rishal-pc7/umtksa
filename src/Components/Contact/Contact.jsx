@@ -99,7 +99,7 @@ const userSchema = z.object({
       :
       <>
       
-        <div style={{backgroundImage:`url('${contactHero}')`}} className='w-full relative  h-screen bg-cover bg-center'>
+        <div style={{backgroundImage:`url('${contactHero}')`}} className='w-full relative  h-screen bg-cover bg-[70%] md:bg-center'>
     <div className="flex justify-end text-brand-cyan flex-col items-left h-full pl-16 pb-20 opacity-40">
 
         <p className="font-bold text-3xl md:text-5xl z-10">Contact Us</p>
