@@ -1,4 +1,4 @@
-import { BrowserRouter as Router,Routes,Route } from "react-router-dom"
+import { BrowserRouter as Router,Routes,Route, useLocation } from "react-router-dom"
 import Header from "./Components/Header/Header"
 import Home from "./Components/Home/Home"
 import About from "./Components/About/About"
@@ -7,9 +7,11 @@ import Products from "./Components/Products/Products"
 import Footer from "./Components/Footer/Footer"
 import Widget from "./Components/Widget"
 import { useEffect, useState } from "react"
-
+const TRACKING_ID = "G-7QEJZVLC9Z"; // Replace with your Measurement ID
+import ReactGA from 'react-ga4'
 function App() {
   const [count,setCount] = useState(0)
+  const location = useLocation()
   useEffect(() => {
     const storedCount = localStorage.getItem('pageVisits')
     const initialCount = Number(storedCount) || 0
@@ -18,6 +20,15 @@ function App() {
     console.log(count);
     
   },[])
+  useEffect(()=>{
+    ReactGA.initialize(TRACKING_ID);
+
+    // Track the initial pageview
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  },[])
+  useEffect(()=>{
+    ReactGA.send({ hitType: "pageview", page: location.pathname });
+  },[location])
   useEffect(() => {
 
     const sliders=document.querySelectorAll('.slider')
@@ -40,7 +51,6 @@ function App() {
   })
 }, []);
   return (
-    <Router>
 
     <div className="font-rubik relative">
          <Header/>
@@ -53,7 +63,6 @@ function App() {
          </Routes>
          <Footer/>
     </div>
-    </Router>
   )
 }
 
