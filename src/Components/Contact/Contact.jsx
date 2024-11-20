@@ -99,12 +99,10 @@ const userSchema = z.object({
       :
       <>
       
-        <div style={{backgroundImage:`url('${contactHero}')`}} className='w-full relative  h-[75vh] bg-cover bg-center'>
-    <div className='absolute bg-slate-500 inset-0 bg-opacity-50'></div>
-    <div className="flex justify-center text-white flex-col items-center h-full ">
+        <div style={{backgroundImage:`url('${contactHero}')`}} className='w-full relative  h-screen bg-cover bg-center'>
+    <div className="flex justify-end text-brand-cyan flex-col items-left h-full pl-16 pb-20 opacity-40">
 
         <p className="font-bold text-3xl md:text-5xl z-10">Contact Us</p>
-        <p className="font-medium  text-center mt-5 text-xl md:text-3xl z-10 md:w-1/2">Feel free to get in touch with us</p>
         </div>
 
     </div>
@@ -113,11 +111,11 @@ const userSchema = z.object({
     <Card className='md:w-1/2 w-full shadow-lg h-full'>
       <CardContent>
 
-    <form onSubmit={handleSubmit} className="space-y-4 p-4 md:p-22">
-    <p className='font-bold text-xl md:text-4xl'>Get In Touch</p>
+    <form onSubmit={handleSubmit} className="space-y-4 p-4 md:p-22 text-brand-blue">
+    <p className='font-bold text-xl md:text-4xl'>To Reach Us</p>
 
       {/* Name Field */} 
-      <div className=''>
+      <div className='pt-5'>
         <Label className='hidden md:block' htmlFor="name">Name</Label>
         <Label className='md:hidden' htmlFor="name">First Name</Label>
 
@@ -194,25 +192,25 @@ const userSchema = z.object({
         </div>
     <div className='flex p-12 md:p-32 gap-x-2 flex-wrap md:flex-nowrap'>
         <div className='w-full md:w-1/2'>
-            <p className='font-bold text-xl md:text-4xl'>Our Location</p>
-            <h1 className='font-normal text-slate-500 text-lg md:text-xl mt-4'>
+            <p className='font-bold text-xl md:text-4xl text-brand-cyan'>Our Location</p>
+            <h1 className='font-normal text-brand-blue text-lg md:text-xl mt-4'>
             Visit us for quality construction and plumbing materials. We are dedicated to providing the best hardware solutions for your projects
             </h1>
-            <p className='font-bold text-lg mt-14 md:text-xl'>Address</p>
-            <h1 className='font-normal text-slate-500 text-md md:text-lg mt-1'>Prince Muhammad Ibn Salman Ibn</h1>
-            <h1 className='font-normal text-slate-500 text-md mt-1 md:text-lg'>Abdulaziz Rd,</h1>
-            <h1 className='font-normal text-slate-500 text-md mt-1 md:text-lg'>Building No: 3517, P O Box: 1334,</h1>
-            <h1 className='font-normal text-slate-500 text-md mt-1 md:text-lg'>Riyadh- Saudi Arabia</h1>
-            <p className='font-bold text-lg mt-4 md:text-xl'>Connect Us</p>
-            <h1 className='font-normal text-slate-500 text-md md:text-lg mt-1'>+966 54 265 0102</h1>
-            <h1 className='font-normal text-slate-500 text-md md:text-lg mt-1'>+966 54 271 8370</h1>
-            <p className='font-bold text-lg mt-4 md:text-xl'>Hours</p>
-            <h1 className='font-normal text-slate-500 text-md md:text-lg mt-1'>9 AM - 5 PM</h1>
+            <p className='font-bold text-lg mt-14 md:text-xl text-brand-cyan'>Address</p>
+            <h1 className='font-normal text-brand-blue text-md md:text-lg mt-1 '>Prince Muhammad Ibn Salman Ibn</h1>
+            <h1 className='font-normal text-brand-blue text-md mt-1 md:text-lg'>Abdulaziz Rd,</h1>
+            <h1 className='font-normal text-brand-blue text-md mt-1 md:text-lg'>Building No: 3517, P O Box: 1334,</h1>
+            <h1 className='font-normal text-brand-blue text-md mt-1 md:text-lg'>Riyadh- Saudi Arabia</h1>
+            <p className='font-bold text-lg mt-4 md:text-xl text-brand-cyan'>Connect Us</p>
+            <h1 className='font-normal text-brand-blue text-md md:text-lg mt-1'>+966 54 265 0102</h1>
+            <h1 className='font-normal text-brand-blue text-md md:text-lg mt-1'>+966 54 264 9546</h1>
+            <h1 className='font-normal text-brand-blue text-md md:text-lg mt-1'>+966 54 271 8370</h1>
+            <p className='font-bold text-lg mt-4 md:text-xl text-brand-cyan'>Hours</p>
+            <h1 className='font-normal text-brand-blue text-md md:text-lg mt-1'>9 AM - 5 PM</h1>
 
         </div>
         <div className="w-full md:w-1/2 h-[25vh] mt-7 md:mt-0 md:h-[75vh]">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47368.39682225005!2d-72.489385!3d42.09623!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e6e85bbff73363%3A0x5241d930e1909b8f!2sHilltop%20St%2C%20Springfield%2C%20MA%2001128!5e0!3m2!1sen!2sus!4v1729356198019!5m2!1sen!2sus" 
-        className='w-full h-full' style={{border:0}} allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3621.682798520529!2d46.70875807536909!3d24.80631297796466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDQ4JzIyLjciTiA0NsKwNDInNDAuOCJF!5e0!3m2!1sen!2sin!4v1732128797371!5m2!1sen!2sin" className='w-full h-full' style={{border:0}} allowfullscreen="" loading="lazy"></iframe>
         </div>
 
 

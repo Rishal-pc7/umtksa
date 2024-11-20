@@ -177,10 +177,13 @@ general_hardware__tools:[
               'Power Tools:\\ Drills, saws, grinders, sanders, and impact drivers for heavy-duty work.',
               'Fasteners:\\ Nails, screws, bolts, nuts, washers, anchors, and other essential fixings.',
               'Ladders:\\ Step ladders, extension ladders, and platform ladders for safe and efficient access.',
-              'General Hardware:\\ Hinges, locks, brackets, chains, adhesives, tapes, and more.',]},
+              'General Hardware:\\ Steel Ropes and Pulleys, brackets, chains, adhesives, tapes, and more.',]},
     {src:`/hardware-tools/1.jpg`},
     {src:`/hardware-tools/2.jpg`},
     {src:`/hardware-tools/3.jpg`},
+    {src:`/hardware-tools/4.jpg`},
+    {src:`/hardware-tools/5.jpg`},
+    {src:`/hardware-tools/6.jpg`},
 ],
 events__exhibition_supplies:[
     {src:'/events/events-hero.jpg',content:"At \\UNITED MODE TRADING\\, we provide a comprehensive range of event-related supplies designed to support the efficient and professional execution of events, from corporate conferences to large-scale public gatherings. Our offerings ensure that your event runs smoothly, safely, and professionally, with products tailored to meet the unique needs of any event type",listHead:'Our Product Offerings Include:',
@@ -206,6 +209,9 @@ events__exhibition_supplies:[
             {src:`/events/1.jpg`},
             {src:`/events/2.jpg`},
             {src:`/events/3.jpg`},
+            {src:`/events/4.jpg`},
+            {src:`/events/5.jpg`},
+            {src:`/events/6.jpg`},
         ],
 used__modified_containers :[
     {src:'/used-containers/containers-hero.jpg',content:"We specialize in providing used and modified containers in a variety of sizes, including 10ft, 20ft, and 40ft containers, both standard and high cube options, tailored to meet your specific needs.With sizes ranging from 10ft to 40ft, we deliver customized, durable container solutions that can be easily transported, set up, and adapted for any project or site.",listHead:'Our modified containers are ideal for a wide range of applications, including:',
@@ -228,7 +234,7 @@ used__modified_containers :[
 const brands = {
     building_materials:[
         {src:'/building-materials/b1.jpg'},
-        {src:'/building-materials/b2.jpg'},
+        {src:'/building-materials/b2.png'},
         {src:'/building-materials/b3.jpg'},
         {src:'/building-materials/b4.jpg'},
         {src:'/building-materials/b5.jpg'},
@@ -353,13 +359,15 @@ const brands = {
         {src:'/hardware-tools/b6.jpg'},
         {src:'/hardware-tools/b7.jpg'},
         {src:'/hardware-tools/b8.jpg'},
+        {src:'/hardware-tools/b9.png'},
+        {src:'/hardware-tools/b10.jpg'},
         
     ],
     
     
 
 }
-
+    
 
     return (
         <>
@@ -383,8 +391,9 @@ const brands = {
                 <ul className="mt-4 text-brand-blue text-lg md:text-xl font-medium slider text-justify from-right">
                    {
                     details[category.split('&').join('')][0].list.map((item,index)=>{
+                        
                         return(
-                            <li key={index} className="list-disc ml-4 tracking-normal capitalize">{item.split('\\').map((content,key)=><span key={key} className={`${key === 1 ? 'font-normal': ''}`}>{content}</span>)}</li>
+                            <li key={index} className="list-disc ml-4 tracking-normal capitalize">{item.split('\\').map((content,key)=><span key={key} className={`${key === 1 ? 'font-normal': ''} `}>{content}</span>)}</li>
                         )
                     })
                    }
@@ -399,7 +408,7 @@ const brands = {
                    {
                     details[category.split('&').join('')][0].list2.map((item,index)=>{
                         return(
-                            <li key={index} className="list-disc ml-4 capitalize">{item.split('\\').map((content,key)=><span key={key} className={`${key === 1 ? 'font-normal': 'font-semibold'}`}>{content}</span>)}</li>
+                            <li key={index} className="list-disc ml-4">{item.split('\\').map((content,key)=><span key={key} className={`${key === 1 ? 'font-normal': 'font-semibold'}`}>{content}</span>)}</li>
                         )
                     })
                    }
