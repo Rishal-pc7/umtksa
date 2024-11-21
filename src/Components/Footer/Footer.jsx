@@ -4,7 +4,7 @@ import { FaSnapchat, FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
-         <div className="relative h-[200vh] md:h-[65vh]  text-white ">
+         <div className="relative h-[220vh] md:h-[65vh]  text-white ">
         <div className="w-full h-full absolute opacity-80 bg-right-top md:bg-center " style={{backgroundImage:`url(${footerBg})`,backgroundSize:'cover'}} >
 
         </div>

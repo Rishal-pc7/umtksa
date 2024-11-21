@@ -26,8 +26,8 @@ function Widget() {
 
     {show&&<div className="hidden md:flex fixed bottom-3  justify-between left-8  w-12 h-[60px] z-10" style={{background:`url(${mainLogo})`}}></div>}
     <div className="whatsapp">
-            <a  target="_blank" href="mailto:sales@umtksa.com" className={`bottom-3 ${show ? 'right-4 md:right-auto md:left-24' : 'right-4 md:right-auto md:left-8'} text-lg gap-x-2 p-5 w-auto text-white`}>
-               <MailIcon/> <span >For Enquires <span className='font-semibold text-xl'>sales@umtksa.com</span></span>
+            <a  target="_blank" href="mailto:sales@umtksa.com" className={`bottom-3 ${show ? 'right-4 md:right-auto md:left-24' : 'right-4 md:right-auto md:left-8'} text-base md:text-lg gap-x-2 p-5 w-auto text-white`}>
+               <MailIcon/> <span >For Enquires <span className='font-semibold text-lg'>sales@umtksa.com</span></span>
               
             </a>
     </div>
