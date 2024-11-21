@@ -4,7 +4,7 @@ import { FaSnapchat, FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
-         <div className="relative h-[220vh] md:h-[65vh]  text-white ">
+         <div className="relative h-[230vh] md:h-[70vh]  text-white ">
         <div className="w-full h-full absolute opacity-80 bg-right-top md:bg-center " style={{backgroundImage:`url(${footerBg})`,backgroundSize:'cover'}} >
 
         </div>
@@ -73,7 +73,7 @@ function Footer() {
          <li>+966 54 265 0102</li>
          <li>+966 54 264 9546</li>
          <li>+966 54 271 8370</li>
-         <li className='md:mt-5'>Prince Muhammad Ibn Salman Ibn Abdulaziz Rd,</li> 
+         <li className='mt-5'>Prince Muhammad Ibn Salman Ibn Abdulaziz Rd,</li> 
          <li>Building No: 3517, P O Box: 1334,</li>
          <li>Riyadh- Saudi Arabia</li>
          
@@ -83,10 +83,10 @@ function Footer() {
         
       </div>
     </div>
-      <div className="flex flex-col  items-center md:flex-row justify-between px-4 md:px-36 py-6 md:pt-20 md:left-1/2 w-full transform md:-translate-x-1/2 absolute bottom-0 text-white">
+      <div className="flex flex-col mt-10 items-center md:flex-row justify-between px-4 md:px-36 pt-10 pb-4  md:pt-20 md:left-1/2 w-full transform md:-translate-x-1/2 absolute md:bottom-0 bottom-14 text-white">
 
       <h2 className="font-normal basis-full md:basis-1/2 text-center md:text-end text-lg md:text-xl mt-10 md:mt-5"> <Copyright className="inline"/> 2024 umtksa.com.All Rights reserved </h2>
-      <div className="flex md:w-auto w-1/2 justify-between mt-10 md:mt-5 gap-x-4 "><a href="https://www.facebook.com/share/19ei6WHYgS/"><FacebookIcon/></a>  <a href="https://www.instagram.com/umt.ksa/profilecard/?igsh=anlkZXZxdWs3Nmp2"><InstagramIcon/></a> <a><FaSnapchat size={'1.5em'}/></a> <a href="https://x.com/unitedmodeksa?s=09"><FaXTwitter  size={'1.5em'}/></a> </div>
+      <div className="flex md:w-auto w-1/2 justify-between mt-5 gap-x-4 "><a href="https://www.facebook.com/share/19ei6WHYgS/"><FacebookIcon/></a>  <a href="https://www.instagram.com/umt.ksa/profilecard/?igsh=anlkZXZxdWs3Nmp2"><InstagramIcon/></a> <a><FaSnapchat size={'1.5em'}/></a> <a href="https://x.com/unitedmodeksa?s=09"><FaXTwitter  size={'1.5em'}/></a> </div>
       </div>
     </div>
   )
