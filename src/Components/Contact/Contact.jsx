@@ -210,7 +210,7 @@ const userSchema = z.object({
 
         </div>
         <div className="w-full md:w-1/2 h-[25vh] mt-7 md:mt-0 md:h-[75vh]">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3621.682798520529!2d46.70875807536909!3d24.80631297796466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDQ4JzIyLjciTiA0NsKwNDInNDAuOCJF!5e0!3m2!1sen!2sin!4v1732128797371!5m2!1sen!2sin" className='w-full h-full' style={{border:0}} allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3621.682798520529!2d46.70875807536909!3d24.80631297796466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDQ4JzIyLjciTiA0NsKwNDInNDAuOCJF!5e0!3m2!1sen!2sin!4v1732128797371!5m2!1sen!2sin" className='w-full h-full' style={{border:0}} allowFullScreen="" loading="lazy"></iframe>
         </div>
 
 

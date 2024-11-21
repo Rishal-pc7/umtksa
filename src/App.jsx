@@ -52,7 +52,7 @@ function App() {
 }, []);
   return (
 
-    <div className="font-rubik relative">
+    <div className="font-rubik">
          <Header/>
          <Widget/>
          <Routes>
