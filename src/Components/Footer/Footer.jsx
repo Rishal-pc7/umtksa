@@ -58,7 +58,7 @@ function Footer() {
          
          <h1 className="text-xl md:text-2xl font-bold md:basis-1/3 block md:hidden text-white rounded-br border-b-4 pb-4 border-brand-cyan">Quick Links</h1>
          
-         <ul className="flex flex-col justify-start items-start w-full text-lg leading-loose mt-5 md:mt-0">
+         <ul className="flex flex-col justify-start items-start w-full text-lg leading-loose mt-5 md:mt-0" style={{wordBreak:'break-word',whiteSpace:'nowrap'}}>
          <li><a href="/" className="underline-offset-2 hover:underline focus:underline">Home</a></li>
          <li><a href="/about" className="underline-offset-2 hover:underline focus:underline">About</a></li>
          <li><a href="/contact" className="underline-offset-2 hover:underline focus:underline">Contact Us</a></li>
@@ -71,7 +71,7 @@ function Footer() {
       <div className="flex flex-col justify-center md:justify-start items-start basis-full md:basis-1/3 ">
          <h1 className="text-xl md:text-2xl font-bold md:basis-1/3 block md:hidden text-white rounded-br border-b-4 pb-4 border-brand-cyan">Contact</h1>
 
-         <ul className="flex flex-col w-full items-start leading-loose mt-5 md:mt-0 text-lg" style={{wordBreak:'keep-all'}}>
+         <ul className="flex flex-col w-full items-start leading-loose mt-5 md:mt-0 text-lg" style={{wordBreak:'break-word',whiteSpace:'nowrap'}}>
          <li>For Enquiries</li>
          <li>sales@umtksa.com</li>
          <li>+966 54 265 0102</li>
