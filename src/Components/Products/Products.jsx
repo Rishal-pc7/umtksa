@@ -372,7 +372,7 @@ const brands = {
     return (
         <>
          <div  className="slider from-left h-[85vh] w-full relative" style={{background:`url(${details[category.split('&').join('')][0].src})`,backgroundPosition:'center',backgroundSize:'cover'}}>
-    <div className='absolute bg-slate-500 inset-0 bg-opacity-30'></div>
+    <div className='absolute inset-0 bg-slate-100 bg-opacity-30'></div>
          
             
     </div>

@@ -5,7 +5,7 @@ import { FaSnapchat, FaXTwitter } from "react-icons/fa6";
 function Footer() {
   return (
     <>
-         <div className="relative w-full h-auto min-h-screen md:min-h-[50vh] text-white bg-cover bg-center"  style={{
+         <div className="relative w-full h-auto min-h-screen md:min-h-[50vh] text-white bg-cover bg-[75%] md:bg-center"  style={{
            backgroundImage:`url(${footerBg})`,
           }}>
         {/* <div className="w-full h-full absolute opacity-80 bg-right-top md:bg-center " style={{backgroundImage:`url(${footerBg})`,backgroundSize:'cover'}} >
@@ -71,7 +71,7 @@ function Footer() {
       <div className="flex flex-col justify-center md:justify-start items-start basis-full md:basis-1/3 ">
          <h1 className="text-xl md:text-2xl font-bold md:basis-1/3 block md:hidden text-white rounded-br border-b-4 pb-4 border-brand-cyan">Contact</h1>
 
-         <ul className="flex flex-col w-full items-start leading-loose mt-5 md:mt-0 text-lg">
+         <ul className="flex flex-col w-full items-start leading-loose mt-5 md:mt-0 text-lg" style={{wordBreak:'keep-all'}}>
          <li>For Enquiries</li>
          <li>sales@umtksa.com</li>
          <li>+966 54 265 0102</li>

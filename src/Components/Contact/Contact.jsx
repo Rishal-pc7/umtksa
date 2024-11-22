@@ -41,19 +41,19 @@ const userSchema = z.object({
   
         // Send email if validation passes
         emailjs.send(
-          'service_c4oc308',
-          'template_zq3u6k4',
+          'service_htod3z7',
+          'template_9kq28ti',
           formData,
-          'RPlaCmGijjUk4HntH'
+          'HXLK8pCW7b5euXqse'
         ).then(() => {
         emailjs.send(
-          'service_c4oc308',
-          'template_1pwbt6d',
+          'service_htod3z7',
+          'template_9yn2rr2',
           {fname:formData.fname,
             lname:formData.lname,
             email:formData.email,
           },
-          'RPlaCmGijjUk4HntH'
+          'HXLK8pCW7b5euXqse'
         ).then(() => {
           setSuccess({...success,status:true})
         })

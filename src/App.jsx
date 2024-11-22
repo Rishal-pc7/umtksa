@@ -6,20 +6,12 @@ import Contact from "./Components/Contact/Contact"
 import Products from "./Components/Products/Products"
 import Footer from "./Components/Footer/Footer"
 import Widget from "./Components/Widget"
-import { useEffect, useState } from "react"
-const TRACKING_ID = "G-7QEJZVLC9Z"; // Replace with your Measurement ID
+import { useEffect} from "react"
+const TRACKING_ID = "G-7QEJZVLC9Z"; // G-DHZR4TEB8S After Hosting
 import ReactGA from 'react-ga4'
 function App() {
-  const [count,setCount] = useState(0)
   const location = useLocation()
-  useEffect(() => {
-    const storedCount = localStorage.getItem('pageVisits')
-    const initialCount = Number(storedCount) || 0
-    setCount(initialCount + 1)
-    localStorage.setItem('pageVisits',initialCount + 1)
-    console.log(count);
-    
-  },[])
+  
   useEffect(()=>{
     ReactGA.initialize(TRACKING_ID);
 
