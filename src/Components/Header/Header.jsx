@@ -15,7 +15,7 @@ function Header() {
 
     {
       menu &&
-      <div className="absolute z-[75] bg-white w-[75%] py-28 h-auto min-h-screen">
+      <div className="absolute z-[75] bg-white w-[85%] py-28 h-auto min-h-screen">
       <div className={`${menu ? 'block' :'hidden'} md:block links mt-4 md:mt-0 w-full pl-4 pb-4 `}>
             <ul className="md:flex md:items-end  h-full leading-loose">
                 <li className="mx-4"><a href="/" className={`${location.pathname === '/' && 'scale-150 font-medium' }  duration-100 text-l hover:text-brand-cyan`}>Home</a></li>
@@ -25,7 +25,7 @@ function Header() {
                   drop &&
                   <div className={`md:absolute md:-left-[11rem] w-full md:w-[38rem] py-5 px-1 md:px-2 bg-white md:shadow text-black z-20 flex gap-x-3 flex-col md:flex-row `} >
                 
-                <ul className='leading-loose'>
+                <ul className='leading-loose' style={{wordBreak:'break-word',whiteSpace:'nowrap'}}>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href="/products/building_materials">Building Materials</a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/construction_materials'> Construction Materials</a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/commercial_steel'> Commercial Steel</a></li>
@@ -35,7 +35,7 @@ function Header() {
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/cables_&_wires'>Cables & Wires</a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/electrical_and_plumbing_materials'> Electrical and Plumbing Materials </a></li>
                 </ul>
-                <ul className='leading-loose'>
+                <ul className='leading-loose' style={{wordBreak:'break-word',whiteSpace:'nowrap'}}>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href="/products/pumps_&_valves">Pumps & Valves</a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/finishing_materials'>Finishing Materials</a></li>
                     <li className='underline-offset-2 hover:underline focus:underline'><a href='/products/air_conditioning_&_HVAC_equipments'> Air Conditioning & HVAC Equipments </a></li>
