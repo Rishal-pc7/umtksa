@@ -19,9 +19,9 @@ function About() {
     <div className="md:p-32 p-12 h-auto w-full">
 
     <div className="flex w-full flex-wrap md:flex-nowrap gap-x-5 pb-20 text-brand-cyan" lang='en'>
-        <div className="w-full md:w-1/2 md:pr-1 slider from-left">
+        <div className="w-full md:w-1/2 m slider from-left">
         <h1 className='font-extrabold  text-lg uppercase'>Who we are</h1>
-        <h1 className='font-bold text-left text-xl md:text-4xl mt-3 md:leading-[3rem] leading-8' >
+        <h1 className='font-bold text-justify text-xl md:text-4xl mt-3 md:leading-[3rem] leading-8' >
         We are a dedicated supplier of essential materials for Construction, Events, Industrial, and Manufacturing sectors, focused on timely delivery.
         </h1>
         </div>
