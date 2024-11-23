@@ -18,14 +18,14 @@ function About() {
     </div>
     <div className="md:p-20 p-12 h-auto w-full">
 
-    <div className="flex w-full flex-wrap md:flex-nowrap gap-x-5 pb-20 text-brand-cyan" lang='en-US'>
-        <div className="w-full md:w-1/2 md:pr-7 m slider from-left">
+    <div className="flex w-full flex-wrap md:flex-nowrap  pb-20 text-brand-cyan" lang='en-US'>
+        <div className="w-full md:w-1/2 m slider from-left">
         <h1 className='font-extrabold  text-lg uppercase'>Who we are</h1>
         <h1 className='font-bold text-justify text-xl md:text-4xl mt-3 md:leading-[3rem] leading-8'style={{wordBreak:'keep-all'}} >
         We are a dedicated supplier of essential materials for Construction, Events, Industrial, and Manufacturing sectors, focused on timely delivery.
         </h1>
         </div>
-        <div className="w-full md:w-1/2 slider from-right">
+        <div className="md:pl-7 w-full md:w-1/2 slider from-right">
         <h1 className='font-normal text-justify text-brand-blue text-lg md:text-xl mt-4 md:mt-10'>
         We are firm believers in the power of collaboration and the importance of forging enduring partnerships with our clients. Our team of seasoned professionals is dedicated to supplying a comprehensive range of materials, precisely tailored to meet the exacting demands of construction, events, and industrial applications.
         <br/>Thank you for choosing UNITED MODE TRADING as your trusted supplier. We are committed to playing a pivotal role in the continued success of your projects and delivering exceptional results.
