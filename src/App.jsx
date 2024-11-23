@@ -6,12 +6,21 @@ import Contact from "./Components/Contact/Contact"
 import Products from "./Components/Products/Products"
 import Footer from "./Components/Footer/Footer"
 import Widget from "./Components/Widget"
-import { useEffect} from "react"
+import { useEffect,useState} from "react"
 const TRACKING_ID = "G-7QEJZVLC9Z"; // G-DHZR4TEB8S After Hosting
 import ReactGA from 'react-ga4'
+import Preloader from "./Components/Preloader"
 function App() {
   const location = useLocation()
-  
+  const [loading,setLoading]=useState(true)
+
+  useEffect(()=>{
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Adjust this time as needed
+
+    return () => clearTimeout(timer);
+  },[])
   useEffect(()=>{
     ReactGA.initialize(TRACKING_ID);
 
@@ -43,8 +52,12 @@ function App() {
   })
 }, []);
   return (
-
+    
     <div className="font-rubik">
+      {
+        loading ? <Preloader/> : 
+
+      <>
          <Header/>
          <Widget/>
          <Routes>
@@ -54,6 +67,8 @@ function App() {
           <Route path="/products/:category" element={<Products/>}/>
          </Routes>
          <Footer/>
+      </>
+      }
     </div>
   )
 }
