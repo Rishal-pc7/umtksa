@@ -15,11 +15,16 @@ function App() {
   const [loading,setLoading]=useState(true)
 
   useEffect(()=>{
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000); // Adjust this time as needed
+    const handleAfterRender = () => {
+      // Ensure content is fully rendered
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          setLoading(false);
+        }, 500); // Optional delay for smooth transition
+      });
+    };
 
-    return () => clearTimeout(timer);
+    handleAfterRender();
   },[])
   useEffect(()=>{
     ReactGA.initialize(TRACKING_ID);

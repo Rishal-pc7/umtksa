@@ -28,34 +28,12 @@
   }
 }
 
-@keyframes animate{
+@keyframes bounce{
   0%{
-    transform: scale(0) translateX(0);
-    opacity: 1;
+    transform: translateY(0);
   }
   50%{
-    top: calc(100% - 50px);
-    transform: scale(.5) translateY(-150px) translateX(-90px);
-  }
-  100%{
-    transform: scale(1) translateX(90px) translateY(-75px) ;
-    opacity: 1;
-    bottom: 0;
-  }
-}
-@keyframes animate-alternate{
-  0%{
-    transform: scale(0) translateX(0);
-    opacity: 1;
-  }
-  50%{
-    top: calc(100% - 50px);
-    transform: scale(.5) translateY(90px) translateX(-90px);
-  }
-  100%{
-    transform: scale(1) translateX(90px) translateY(75px) ;
-    opacity: 1;
-    bottom: 0;
+    transform: translateY(-50px);
   }
 }
 
@@ -212,3 +190,6 @@ user-select: none;
   animation: fadeInMove 400ms ease-in var(--delay) forwards,fadeOpacity 200ms ease-in 2s;
 }
 
+.bouncing{
+  animation: bounce 1s infinite;
+}
