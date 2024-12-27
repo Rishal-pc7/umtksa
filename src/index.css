@@ -191,5 +191,5 @@ user-select: none;
 }
 
 .bouncing{
-  animation: bounce 1s infinite;
+  animation: bounce .7s infinite;
 }
