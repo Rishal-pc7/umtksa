@@ -65,7 +65,7 @@ function Header() {
             {menu ? <button className='outline-none p-4 bg-none ' onClick={()=>setMenu(!menu)}><X/></button>:<button className='outline-none p-4 bg-none' onClick={()=>setMenu(!menu)}><MenuIcon/></button>}
         </div>     
 
-      <div className={`hidden relative md:flex md:h-20 md:w-[55%] md:rounded-bl-[80px] md:border-l-[20px] md:border-l-brand-cyan bg-white `}>
+      <div className={`hidden relative md:flex md:h-20 md:w-[60%] md:rounded-bl-[80px] md:border-l-[20px] md:border-l-brand-cyan bg-white `}>
       
 
       
