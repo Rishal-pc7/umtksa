@@ -12,12 +12,12 @@ A modern, responsive corporate website developed for **United Mode Trading**, a 
 ---
 
 ## 📖 Table of Contents
-- [About the Project](#about-the-project)
-- [Key Features](#key-features)
-- [Technologies Used](#technologies-used)
-- [Deployment](#deployment)
-- [Author](#author)
-- [License & Ownership](#license)
+- About the Project
+- Key Features
+- Technologies Used
+- Deployment
+- Author
+- License & Ownership
 
 ---
 
