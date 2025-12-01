@@ -47,8 +47,8 @@ The website highlights the company's role in the construction sector, specifical
 * **[React.js](https://reactjs.org/):** Core frontend library for building the user interface.
 * **[React Router DOM](https://reactrouter.com/):** Handling navigation and routing.
 * **[Tailwind CSS](https://tailwindcss.com/):** Utility-first CSS framework for rapid and responsive styling.
-* **[React Icons](https://react-icons.github.io/react-icons/):** (Assumed) Icon assets for UI elements.
-* **Vite / Create React App:** (Depending on your build tool) Development environment.
+* **[React Icons](https://react-icons.github.io/react-icons/):** Icon assets for UI elements.
+* **Vite:** Development environment.
 
 ---
 
@@ -66,7 +66,7 @@ The production build of this project is deployed and currently live.
 
 * **Role:** Freelance Front-End Developer
 * **Focus:** React.js, Tailwind CSS, and Modern Web UI
-* **LinkedIn:** [Rishal P](https://www.linkedin.com/in/rishal-p/)
+* **[LinkedIn](https://www.linkedin.com/in/rishal-p/)**
 
 ---
 
